@@ -7,28 +7,46 @@
 
         <!-- css -->
         <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/navbar.css">
+
+        <style>
+            a.ex1:hover {color: #FFFFFF;}
+        </style>
     </head>
 
     <body>
-        <div class="container">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-                <div class="col-md-3 mb-2 mb-md-0">
-                    <a href="/" class="h5 d-inline-flex link-body-emphasis text-decoration-none" style="color: #394E91;">
-                        Klinik Raycare
-                    </a>
+        <div class="d-flex align-items-center justify-content-md-between py-3" style="padding-left:40px; padding-right:40px; background:#FFFFFF; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);">
+            <!-- <div>
+                <a href="/" class="h5 nav-link" style="text-align:justify; color:#394E91;">Klinik Raycare</a>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-3" style="flex: 1 0 0;">
+                <div class="d-flex justify-content-center align-items center align-self-stretch">
+                    <a href="#" class="nav-link body-medium text-align-justify" style="color:#394E91;">Dashboard</a>
                 </div>
-
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="body-medium nav-link px-2" style="color: #394E91;">Dashboard</a></li>
-                    <li><a href="#" class="body-medium nav-link px-2" style="color: #394E91;">Acara</a></li>
-                    <li><a href="#" class="body-medium nav-link px-2" style="color: #394E91;">TPS</a></li>
-                </ul>
-
-                <div class="col-md-3 text-end">
-                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <div class="d-flex justify-content-center align-items center align-self-stretch">
+                    <a href="#" class="nav-link body-medium text-align-justify" style="color:#394E91;">Acara</a>
                 </div>
-            </header>
+                <div class="d-flex justify-content-center align-items center align-self-stretch">
+                    <a href="#" class="nav-link body-medium text-align-justify" style="color:#394E91;">TPS</a>
+                </div>
+            </div>
+            <div>
+                <img src="https://github.com/mdo.png" alt="" width="40" height="40" class="rounded-circle me-2">
+            </div> -->
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="h5 d-inline-flex link-body-emphasis text-decoration-none" style="color: #394E91;">
+                    Klinik Raycare
+                </a>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a class="ex1 body-medium nav-link px-2" href="#" style="color: #394E91;">Dashboard</a></li>
+                <li><a class="menu body-medium nav-link px-2"  href="#" style="color: #394E91;">Acara</a></li>
+                <li><a class="menu body-medium nav-link px-2" href="#" style="color: #394E91;">TPS</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
