@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('penarikan_lcs', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->unsignedBigInteger('no_lc');
+            $table->foreign('no_lc')->references(columns : 'id')->on(table : 'l_c_s')->onDelete('cascade')->onUpdate('cascade');
+            $table->date('p_tglPenarikan');
+            $table->enum('p_alasanPenarikan', ['TIDAK MENDUKUNG', 'MENINGGAL']);
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('penarikan_lcs');
     }
 };
