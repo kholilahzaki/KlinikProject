@@ -28,3 +28,7 @@ Route::get('/ktp', function () {
 Route::get('/kk', function () {
     return view('User/kk');
 });
+
+Route::get('/lc', function () {
+    return view('User/lc');
+});
