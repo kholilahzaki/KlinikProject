@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="/css/style.css">
 
         <style>
-            a.ex1:hover {color: #FFFFFF;}
+            a.nav-link {color: #394E91;}
+            /* lihat hover warnanya di figma: success */
+            a.nav-link:hover {color: #000000;} 
         </style>
     </head>
 
@@ -39,9 +41,9 @@
             </div>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a class="ex1 body-medium nav-link px-2" href="#" style="color: #394E91;">Dashboard</a></li>
-                <li><a class="menu body-medium nav-link px-2"  href="#" style="color: #394E91;">Acara</a></li>
-                <li><a class="menu body-medium nav-link px-2" href="#" style="color: #394E91;">TPS</a></li>
+                <li><a class="body-medium nav-link px-2" href="#">Dashboard</a></li>
+                <li><a class="body-medium nav-link px-2"  href="#">Acara</a></li>
+                <li><a class="body-medium nav-link px-2" href="#">TPS</a></li>
             </ul>
 
             <div class="col-md-3 text-end">
