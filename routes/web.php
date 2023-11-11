@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/login', function () {
+    return view('User/login');
+});
+
 Route::get('/', function () {
     return view('Component/navbar');
 });
