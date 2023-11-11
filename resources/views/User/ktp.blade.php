@@ -55,18 +55,18 @@
         </header>
         <main>
         <div style="width: 100%; height: 100%; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
-    <div style="align-self: stretch; height: 80px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-        <div style="border-radius: 10px; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
-            <div style="width: 24px; height: 24px; position: relative">
-                <div style="width: 15.58px; height: 15.17px; left: 4.42px; top: 4.41px; position: absolute; background: #394E91"></div>
+            <div style="align-self: stretch; height: 80px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                <div style="border-radius: 10px; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+                    <div style="width: 24px; height: 24px; position: relative">
+                        <div style="width: 15.58px; height: 15.17px; left: 4.42px; top: 4.41px; position: absolute; background: #394E91"></div>
+                    </div>
+                    <div style="text-align: justify; color: #394E91; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Kembali ke Halaman Utama</div>
+                </div>
+                <div style="justify-content: center; align-items: center; display: inline-flex">
+                    <div style="text-align: justify; color: #1D1B20; font-size: 40px; font-family: Inter; font-weight: 700; line-height: 56px; word-wrap: break-word">Tambah Pengguna</div>
+                </div>
             </div>
-            <div style="text-align: justify; color: #394E91; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Kembali ke Halaman Utama</div>
-        </div>
-        <div style="justify-content: center; align-items: center; display: inline-flex">
-            <div style="text-align: justify; color: #1D1B20; font-size: 40px; font-family: Inter; font-weight: 700; line-height: 56px; word-wrap: break-word">Tambah Pengguna</div>
-        </div>
-    </div>
-    <div style="align-self: stretch; height: 1716px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
         <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
             <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
                 <div style="width: 48px; height: 48px; position: relative">
@@ -131,20 +131,45 @@
                 </div>
 
                 <!-- tempat dan tanggal lahir -->
-                <div class="d-flex" style="justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-                    <div class="flex-fill" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-                        <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Tampat Lahir</div>
-                        <div style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
-                            <div style="width: 700px; height: 24px; padding-right: 610px; justify-content: flex-start; align-items: center; display: flex">
-                                <div style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">Placeholder</div>
-                            </div>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <input type="text" class="" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex" id="tempatLahir" placeholder="Masukkan tempat lahir pengguna" value="" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex" id="tempatLahir" placeholder="Masukkan tempat lahir pengguna" value="" required>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-sm-6">
+                        <!-- <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div> -->
+                        <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Tampat Lahir</div>
+                            <input type="text" class="" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex" id="tempatLahir" placeholder="Masukkan tempat lahir pengguna" value="" required>
+                            <!-- <div style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                                <div style="width: 700px; height: 24px; padding-right: 610px; justify-content: flex-start; align-items: center; display: flex">
+                                    <div style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">Placeholder</div>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="flex-fill" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-                        <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Tanggal Lahir</div>
-                        <div style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
-                            <div style="width: 700px; height: 24px; padding-right: 610px; justify-content: flex-start; align-items: center; display: flex">
-                                <div style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">Placeholder</div>
+
+                    <div class="col-sm-6">
+                        <!-- <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div> -->
+                        <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Tampat Lahir</div>
+                            <div style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                                <div style="width: 700px; height: 24px; padding-right: 610px; justify-content: flex-start; align-items: center; display: flex">
+                                    <div style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">Placeholder</div>
+                                </div>
                             </div>
                         </div>
                     </div>
