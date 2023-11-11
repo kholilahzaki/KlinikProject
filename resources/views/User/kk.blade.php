@@ -54,11 +54,8 @@
             </div>
         </header>
 
-        <!-- <main>
-            @yield('content')
-        </main> -->
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <main>
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
 
     <div class="MainContain" style="width: 100%; height: 100%; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
         <!--header judul-->
@@ -142,49 +139,52 @@
                 <!--no kk-->
                 <div class="TitleInputField" style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                     <div class="Title" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Nomor KK</div>
-                    <div class="InputFields" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                    <input placeholder="Masukkan Nomor KK" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                    <!-- <div class="InputFields" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
                         <div class="Placeholder" style="width: 1456px; height: 24px; padding-right: 1366px; justify-content: flex-start; align-items: center; display: flex">
                             <div class="Placeholder" style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">Placeholder</div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!--no dokumen-->
                 <div class="TitleInputField" style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                     <div class="Title" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Nomor Dokumen KK</div>
-                    <div class="InputFields" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                    <input placeholder="Masukkan Nomor Dokumen KK" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                    <!-- <div class="InputFields" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
                         <div class="Placeholder" style="width: 1456px; height: 24px; padding-right: 1366px; justify-content: flex-start; align-items: center; display: flex">
                             <div class="Placeholder" style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">Placeholder</div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!--nama-->
                 <div class="TitleInputField" style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                     <div class="Title" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Nama</div>
-                    <div class="InputFields" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                    <input placeholder="Masukkan Nama" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                    <!-- <div class="InputFields" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
                         <div class="Placeholder" style="width: 1456px; height: 24px; padding-right: 1366px; justify-content: flex-start; align-items: center; display: flex">
                             <div class="Placeholder" style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">Placeholder</div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!--upload-->
                 <div class="TitleInputField" style="align-self: stretch; height: 113px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                     <div class="Title" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Unggah Foto KK</div>
-                    <div class="InputFields" style="align-self: stretch; height: 81px; border-radius: 5px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 4px; display: flex">
-                        <div class="Frame47" style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
-                            <div class="Frame15" style="padding: 16px; background: #757575; border-top-left-radius: 5px; border-top-right-radius: 5px; justify-content: center; align-items: center; display: flex">
+                    <div class="InputFields" style="align-self: stretch; height: 81px; border-radius: 5px; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                        <div class="Frame47" style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex; padding-top: 20px">
+                            <div class="Frame15" style="padding: 10px; background: #757575; border-top-left-radius: 5px; border-top-right-radius: 5px; justify-content: center; align-items: center; display: flex">
                                 <div class="ChooseFile" style="text-align: justify; color: white; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Choose File</div>
                             </div>
                             <div class="Frame11" style="flex: 1 1 0; height: 56px; padding: 16px; background: #FAFAFA; border-top-left-radius: 5px; border-top-right-radius: 5px; border-top: 1px #DADDE5 solid; border-right: 1px #DADDE5 solid; border-bottom: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: flex">
-                                <div class="Placeholder" style="width: 1333px; height: 24px; padding-right: 1243px; justify-content: flex-start; align-items: center; display: flex">
-                                    <div class="Placeholder" style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">Placeholder</div>
+                                <div class="Placeholder" style="width: 133px; height: 24px; padding-right: 1243px; justify-content: flex-start; align-items: center; display: flex">
+                                    <div class="Placeholder" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Dokumen KK</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="TheFieldIsRequired" style="width: 133px; height: 21px; padding-right: 56px; justify-content: flex-start; align-items: center; display: inline-flex">
-                            <div class="TheFieldIsRequired" style="text-align: justify; color: #757575; font-size: 14px; font-family: Inter; font-weight: 500; line-height: 21px; word-wrap: break-word">Format: ???</div>
+                        <div class="TheFieldIsRequired" style="width: px; height: 21px; padding-right: 56px; justify-content: flex-start; align-items: center; display: inline-flex">
+                            <div class="TheFieldIsRequired" style="text-align: justify; color: #757575; font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word">Format: PDF atau JPG</div>
                         </div>
                     </div>
                 </div>
@@ -201,5 +201,6 @@
             </div>
         </div>
     </div>
+    </main>
 </body>
 </html>
