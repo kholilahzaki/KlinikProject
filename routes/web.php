@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('Component/navbar');
 });
+
+Route::get('/ktp', function () {
+    return view('User/ktp');
+});
