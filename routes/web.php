@@ -28,7 +28,3 @@ Route::get('/ktp', function () {
 Route::get('/kk', function () {
     return view('User/kk');
 });
-
-Route::get('/informasi-lainnya', function () {
-    return view('User/other');
-});
