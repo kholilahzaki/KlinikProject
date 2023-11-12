@@ -19,7 +19,7 @@
 
     <body>
         <header>
-            <div class="d-flex align-items-center justify-content-md-between py-3" style="padding-left:40px; padding-right:40px; background:#FFFFFF; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);">
+            <div class="d-flex align-items-center justify-content-md-between py-3" style="width: 100%; height: 100%; padding-left:40px; padding-right:40px; background:#FFFFFF; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);">
                 <!-- <div>
                     <a href="/" class="h5 nav-link" style="text-align:justify; color:#394E91;">Klinik Raycare</a>
                 </div>
@@ -56,9 +56,9 @@
         </header>
 
         <main>
-            <div style="width: 100%; height: 100%; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
+            <div style="width: 100%; height: 100%; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex;">
                 <!-- Title page -->
-                <div style="align-self: stretch; height: 80px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex;">
                     <div style="border-radius: 10px; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
                         <button type="button" class="btn" style="text-align: justify; color: #394E91; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@
                         <div style="text-align: justify; color: #1D1B20; font-size: 40px; font-family: Inter; font-weight: 700; line-height: 56px; word-wrap: break-word">Tambah Pengguna</div>
                     </div>
                 </div>
-                <div style="align-self: stretch; height: 1716px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
                     <!-- stepper -->
                     <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
                         <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
@@ -122,7 +122,7 @@
                         <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; display: inline-flex">
                             <div style="text-align: justify; color: #394E91; font-size: 24px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Kartu Tanda Penduduk (KTP)</div>
                         </div>
-                        <div style="align-self: stretch; height: 1402px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
                             <!-- NIK pengguna -->
                             <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">NIK</div>
