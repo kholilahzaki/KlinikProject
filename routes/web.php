@@ -13,18 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
 
-Route::get('/', function () {
-    return view('Component/navbar');
-});
+// Route::get('/', function () {
+//     return view('Component/navbar');
+// });
 
-Route::get('/ktp', function () {
-    return view('User/ktp');
-});
+// Route::get('/ktp', function () {
+//     return view('User/ktp');
+// });
 
-Route::get('/kk', function () {
-    return view('User/kk');
-});
+// Route::get('/kk', function () {
+//     return view('User/kk');
+// });
+
+// Route::get('/lc', function () {
+//     return view('User/lc');
+// });
+
+// Route::get('/bpjs', function () {
+//     return view('User/bpjs');
+// });
+
+// Route::get('/other', function () {
+//     return view('User/other');
+// });
+
+// Route::get('/add', function () {
+//     return view('User/add');
+// });

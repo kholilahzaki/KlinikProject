@@ -79,12 +79,7 @@
                         <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
                             <div style="width: 48px; height: 48px; position: relative">
                                 <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #394E91; border-radius: 9999px"></div>
-                                <!-- INI ICON PUTIHNYA BAGAIMANA?? T-T yaudah besok aja -->
-                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="ic:round-check">
-                                        <path id="Vector" d="M12.4995 21.56L7.87288 16.9333C7.62357 16.684 7.28544 16.544 6.93288 16.544C6.58031 16.544 6.24218 16.684 5.99288 16.9333C5.74357 17.1826 5.60352 17.5208 5.60352 17.8733C5.60352 18.0479 5.6379 18.2208 5.70471 18.3821C5.77151 18.5434 5.86943 18.6899 5.99288 18.8133L11.5662 24.3867C12.0862 24.9067 12.9262 24.9067 13.4462 24.3867L27.5529 10.28C27.8022 10.0307 27.9422 9.69258 27.9422 9.34001C27.9422 8.98744 27.8022 8.64932 27.5529 8.40001C27.3036 8.15071 26.9654 8.01065 26.6129 8.01065C26.2603 8.01065 25.9222 8.15071 25.6729 8.40001L12.4995 21.56Z" fill="white"/>
-                                    </g>
-                                </svg>
+                                <div style="left: 19px; top: 12px; position: absolute; text-align: right; color: white; font-size: 18px; font-family: Inter; font-weight: 700; line-height: 25.20px; word-wrap: break-word">1</div>
                             </div>
                             <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">KTP</div>
                         </div>
@@ -92,50 +87,35 @@
                         <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
                             <div style="width: 48px; height: 48px; position: relative">
                                 <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #394E91; border-radius: 9999px"></div>
-                                <!-- INI ICON PUTIHNYA BAGAIMANA?? T-T yaudah besok aja -->
-                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="ic:round-check">
-                                        <path id="Vector" d="M12.4995 21.56L7.87288 16.9333C7.62357 16.684 7.28544 16.544 6.93288 16.544C6.58031 16.544 6.24218 16.684 5.99288 16.9333C5.74357 17.1826 5.60352 17.5208 5.60352 17.8733C5.60352 18.0479 5.6379 18.2208 5.70471 18.3821C5.77151 18.5434 5.86943 18.6899 5.99288 18.8133L11.5662 24.3867C12.0862 24.9067 12.9262 24.9067 13.4462 24.3867L27.5529 10.28C27.8022 10.0307 27.9422 9.69258 27.9422 9.34001C27.9422 8.98744 27.8022 8.64932 27.5529 8.40001C27.3036 8.15071 26.9654 8.01065 26.6129 8.01065C26.2603 8.01065 25.9222 8.15071 25.6729 8.40001L12.4995 21.56Z" fill="white"/>
-                                    </g>
-                                </svg>
+                                <div style="left: 19px; top: 12px; position: absolute; text-align: right; color: white; font-size: 18px; font-family: Inter; font-weight: 700; line-height: 25.20px; word-wrap: break-word">2</div>
                             </div>
-                            <div style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Kartu Keluarga</div>
+                            <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Kartu Keluarga</div>
                         </div>
                         <div style="flex: 1 1 0; height: 0px; border: 1px #DADDE5 solid"></div>
                         <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
                             <div style="width: 48px; height: 48px; position: relative">
                                 <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #394E91; border-radius: 9999px"></div>
-                                <!-- INI ICON PUTIHNYA BAGAIMANA?? T-T yaudah besok aja -->
-                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="ic:round-check">
-                                        <path id="Vector" d="M12.4995 21.56L7.87288 16.9333C7.62357 16.684 7.28544 16.544 6.93288 16.544C6.58031 16.544 6.24218 16.684 5.99288 16.9333C5.74357 17.1826 5.60352 17.5208 5.60352 17.8733C5.60352 18.0479 5.6379 18.2208 5.70471 18.3821C5.77151 18.5434 5.86943 18.6899 5.99288 18.8133L11.5662 24.3867C12.0862 24.9067 12.9262 24.9067 13.4462 24.3867L27.5529 10.28C27.8022 10.0307 27.9422 9.69258 27.9422 9.34001C27.9422 8.98744 27.8022 8.64932 27.5529 8.40001C27.3036 8.15071 26.9654 8.01065 26.6129 8.01065C26.2603 8.01065 25.9222 8.15071 25.6729 8.40001L12.4995 21.56Z" fill="white"/>
-                                    </g>
-                                </svg>
+                                <div style="left: 19px; top: 12px; position: absolute; text-align: right; color: white; font-size: 18px; font-family: Inter; font-weight: 700; line-height: 25.20px; word-wrap: break-word">3</div>
                             </div>
-                            <div style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Loyalty Card</div>
+                            <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Loyalty Card</div>
                         </div>
                         <div style="flex: 1 1 0; height: 0px; border: 1px #DADDE5 solid"></div>
                         <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
                             <div style="width: 48px; height: 48px; position: relative">
                                 <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #394E91; border-radius: 9999px"></div>
-                                <!-- INI ICON PUTIHNYA BAGAIMANA?? T-T yaudah besok aja -->
-                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="ic:round-check">
-                                        <path id="Vector" d="M12.4995 21.56L7.87288 16.9333C7.62357 16.684 7.28544 16.544 6.93288 16.544C6.58031 16.544 6.24218 16.684 5.99288 16.9333C5.74357 17.1826 5.60352 17.5208 5.60352 17.8733C5.60352 18.0479 5.6379 18.2208 5.70471 18.3821C5.77151 18.5434 5.86943 18.6899 5.99288 18.8133L11.5662 24.3867C12.0862 24.9067 12.9262 24.9067 13.4462 24.3867L27.5529 10.28C27.8022 10.0307 27.9422 9.69258 27.9422 9.34001C27.9422 8.98744 27.8022 8.64932 27.5529 8.40001C27.3036 8.15071 26.9654 8.01065 26.6129 8.01065C26.2603 8.01065 25.9222 8.15071 25.6729 8.40001L12.4995 21.56Z" fill="white"/>
-                                    </g>
-                                </svg>
+                                <div style="left: 19px; top: 12px; position: absolute; text-align: right; color: white; font-size: 18px; font-family: Inter; font-weight: 700; line-height: 25.20px; word-wrap: break-word">4</div>
                             </div>
-                            <div style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">BPJS</div>
+                            <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">BPJS</div>
                         </div>
                         <div style="flex: 1 1 0; height: 0px; border: 1px #DADDE5 solid"></div>
                         <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
-                            <div style="width: 48px; height: 48px; position: relative">
+                        <div style="width: 48px; height: 48px; position: relative">
                                 <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #394E91; border-radius: 9999px"></div>
                                 <div style="left: 19px; top: 12px; position: absolute; text-align: right; color: white; font-size: 18px; font-family: Inter; font-weight: 700; line-height: 25.20px; word-wrap: break-word">5</div>
                             </div>
-                            <div style="text-align: justify; color: #757575; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Informasi Lainnya</div>
+                            <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Informasi Lainnya</div>
                         </div>
-                    </div>
+        </div>
 
                     <!-- main content -->
                     <div style="align-self: stretch; padding-left: 40px; padding-right: 40px; padding-top: 32px; padding-bottom: 32px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: flex">
@@ -182,11 +162,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="align-self: stretch; height: 56px; flex-direction: column; justify-content: flex-start; align-items: flex-end; display: flex">
-                            <a class="btn btn-primary" style="padding: 16px; background: #394E91; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex" href="#" role="button">
-                                <div style="text-align: justify; color: white; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Selanjutnya</div>
-                            </a>
-                        </div>
+
+                        <!-- tombol submit -->
+                        <div class="Frame50" style="align-self: stretch; justify-content: flex-end; align-items: flex-start; gap: 8px; display: inline-flex">
+                                    <div class="Button" style="padding: 16px; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                                        <div class="Button" style="text-align: justify; color: #394E91; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Sebelumnya</div>
+                                    </div>
+                                    <input type="submit" style="padding: 16px; background: #394E91; border-radius: 10px; text-align: justify; color: white; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word" value="Selesai">
+                                    <!-- <div class="Button" style="padding: 16px; background: #394E91; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                                        <div class="Button" style="text-align: justify; color: white; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Selanjutnya</div>
+                                    </div> -->
+                                </div>
+                        <!-- <div style="align-self: stretch; height: 56px; flex-direction: column; justify-content: flex-start; gap: 8px; align-items: flex-end; display: flex">
+                            <div class="Button" style="padding: 16px; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                                        <div class="Button" style="text-align: justify; color: #394E91; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Sebelumnya</div>
+                                    </div>
+                            <input type="submit" style="padding: 16px; background: #394E91; border-radius: 10px; text-align: justify; color: white; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word" value="Selesai">
+                        </div> -->
                     </div>
                 </div>
             </div>
