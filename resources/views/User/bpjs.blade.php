@@ -8,6 +8,7 @@
 
         <!-- css -->
         <link rel="stylesheet" href="/css/styles.css">
+        <title>Klinik Raycare - BPJS</title>
 
         <style>
             a.nav-link {color: #394E91;}
@@ -19,42 +20,7 @@
     </head>
 
     <body>
-        <header>
-            <div class="d-flex align-items-center justify-content-md-between py-3" style="padding-left:40px; padding-right:40px; background:#FFFFFF; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);">
-                <!-- <div>
-                    <a href="/" class="h5 nav-link" style="text-align:justify; color:#394E91;">Klinik Raycare</a>
-                </div>
-                <div class="d-flex justify-content-center align-items-center gap-3" style="flex: 1 0 0;">
-                    <div class="d-flex justify-content-center align-items center align-self-stretch">
-                        <a href="#" class="nav-link body-medium text-align-justify" style="color:#394E91;">Dashboard</a>
-                    </div>
-                    <div class="d-flex justify-content-center align-items center align-self-stretch">
-                        <a href="#" class="nav-link body-medium text-align-justify" style="color:#394E91;">Acara</a>
-                    </div>
-                    <div class="d-flex justify-content-center align-items center align-self-stretch">
-                        <a href="#" class="nav-link body-medium text-align-justify" style="color:#394E91;">TPS</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://github.com/mdo.png" alt="" width="40" height="40" class="rounded-circle me-2">
-                </div> -->
-                <div class="col-md-3 mb-2 mb-md-0">
-                    <a href="/" class="h5 d-inline-flex link-body-emphasis text-decoration-none" style="color: #394E91;">
-                        Klinik Raycare
-                    </a>
-                </div>
-
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a class="body-medium nav-link px-2" href="#">Dashboard</a></li>
-                    <li><a class="body-medium nav-link px-2"  href="#">Acara</a></li>
-                    <li><a class="body-medium nav-link px-2" href="#">TPS</a></li>
-                </ul>
-
-                <div class="col-md-3 text-end">
-                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                </div>
-            </div>
-        </header>
+    @include('component.navbar')
 
         <main>
             <div style="width: 100%; height: 100%; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">

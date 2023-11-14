@@ -8,7 +8,7 @@
 
         <!-- css -->
         <link rel="stylesheet" href="/css/styles.css">
-        <title>Klinik Raycare - {{ $title }}</title>
+        <title>Klinik Raycare - Dashboard</title>
 
         <style>
             a.nav-link {color: #394E91;}
@@ -25,10 +25,7 @@
     </head>
     <body>
 
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a class="body-medium nav-link px-2" href="#">Dashboard</a></li>
-                    <li><a class="body-medium nav-link px-2"  href="#">Acara</a></li>
-                </ul>
+        @include('component.navbar')
 
         <main>
             <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">

@@ -18,43 +18,34 @@ Route::get('/login', function () {
 });
 
 Route::get('/', function () {
-    return view('Dashboard/index');
+    return view('dashboard/index');
 });
 
 Route::get('/ktp', function () {
-    return view('User/ktp');
+    return view('user/ktp');
 });
 
 Route::get('/kk', function () {
-    return view('User/kk');
+    return view('user/kk');
 });
 
 Route::get('/bpjs', function () {
-    return view('User/bpjs');
+    return view('user/bpjs');
 });
 
 Route::get('/lc', function () {
-    return view('User/lc');
-});
-
-
-Route::get('/bpjs', function () {
-    return view('User/bpjs');
-});
-
-Route::get('/lc', function () {
-    return view('User/lc');
+    return view('user/lc');
 });
 
 Route::get('/informasi-lainnya', function () {
-    return view('User/other');
+    return view('user/other');
 });
 
 // MENU ACARA
 Route::get('/acara', function () {
-    return view(('Event/index'));
+    return view('event/index');
 });
 
 Route::get('/detail-acara', function () {
-    return view('Event/detailAcara');
+    return view('event/detailAcara');
 });

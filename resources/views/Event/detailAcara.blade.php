@@ -8,6 +8,7 @@
 
         <!-- css -->
         <link rel="stylesheet" href="/css/styles.css">
+        <title>Klinik Raycare - Detail Acara</title>
 
         <style>
             a.nav-link {color: #394E91; font-weight: 500;}

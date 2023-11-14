@@ -12,12 +12,13 @@
         <style>
             a.nav-link {color: #394E91;}
             /* lihat hover warnanya di figma: success */
-            a.nav-link:hover {color: #293A79;} 
+            a.nav-link:hover {color: #dfdfdf;} 
+            a.nav-link:focus {color: #000000; font-weight: 600;}
         </style>
     </head>
 
     <body>
-        <header>
+        <header>       
             <div class="d-flex align-items-center justify-content-md-between py-3" style="padding-left:40px; padding-right:40px; background:#FFFFFF; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);">
                 <!-- <div>
                     <a href="/" class="h5 nav-link" style="text-align:justify; color:#394E91;">Klinik Raycare</a>
