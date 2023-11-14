@@ -13,6 +13,16 @@ return new class extends Migration
     {
         Schema::create('ktps', function (Blueprint $table) {
             $table->id();
+            $table->integer('no_nik')->unsigned;
+            $table->string('ktp_nama');
+            $table->date('ktp_tglLahir');
+            $table->enum('ktp_jeniskelamin', ['L', 'P']);
+            $table->text('ktp_alamat');
+            $table->enum('ktp_agama', ['ISLAM', 'KRISTEN', 'KATOLIK', 'HINDU', 'BUDDHA', 'KONGHUCU']);
+            $table->string('ktp_statuskawin');
+            $table->string('ktp_pekerjaan');
+            $table->enum('ktp_kewarganegaraan', ['WNI', 'WNA']);
+            $table->binary('ktp_fotoktp');
             $table->timestamps();
         });
     }

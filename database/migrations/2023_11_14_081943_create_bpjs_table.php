@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('bpjs', function (Blueprint $table) {
             $table->id();
+            $table->integer('no_bpjs')->unsigned;
+            $table->enum('bpjs_jenis', ['PBI APBD', 'PBI APBN', 'MANDIRI', 'PERUSAHAAN']);
             $table->timestamps();
         });
     }

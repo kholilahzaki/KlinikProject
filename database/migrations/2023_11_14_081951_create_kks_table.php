@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('kks', function (Blueprint $table) {
             $table->id();
+            $table->integer('no_kk')->unsigned;
+            $table->integer('kk_no_dokumen');
+            $table->string('kk_kepalakeluarga');
+            $table->string('kk_pasangan');
+            $table->string('kk_anak');
+            $table->binary('kk_fotokk');
             $table->timestamps();
         });
     }
