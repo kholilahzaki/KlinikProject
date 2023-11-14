@@ -30,6 +30,7 @@
                 <div style="align-self: stretch; height: 192px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
               
                 <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                        <form>
                         <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Email</div>
                         <input type="text" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex" id="email" placeholder="Masukkan Email" value="" required>
                         <!-- <div style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
