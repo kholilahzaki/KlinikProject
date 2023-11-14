@@ -18,7 +18,7 @@ Route::get('/login', function () {
 });
 
 Route::get('/', function () {
-    return view('Component/navbar');
+    return view('Dashboard/index');
 });
 
 Route::get('/ktp', function () {
@@ -27,4 +27,25 @@ Route::get('/ktp', function () {
 
 Route::get('/kk', function () {
     return view('User/kk');
+});
+
+Route::get('/bpjs', function () {
+    return view('User/bpjs');
+});
+
+Route::get('/lc', function () {
+    return view('User/lc');
+});
+
+Route::get('/informasi-lainnya', function () {
+    return view('User/other');
+});
+
+// MENU ACARA
+Route::get('/acara', function () {
+    return view(('Event/index'));
+});
+
+Route::get('/detail-acara', function () {
+    return view('Event/detailAcara');
 });

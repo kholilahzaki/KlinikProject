@@ -10,10 +10,18 @@
         <link rel="stylesheet" href="/css/styles.css">
 
         <style>
+            /* navbar */
             a.nav-link {color: #394E91;}
             a.nav-link:hover {color: #293A79;} 
+
             body {background-color: #F5F6FA;}
 
+            /* button primary */
+            .button-fill {background: #394E91;}
+            .button-fill:hover {background: #293A79;}
+
+            /* button ghost */
+            .button-ghost:hover {background: #EEEFF4;}
         </style>
     </head>
 
@@ -45,8 +53,7 @@
 
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                     <li><a class="body-medium nav-link px-2" href="#">Dashboard</a></li>
-                    <li><a class="body-medium nav-link px-2"  href="#">Acara</a></li>
-                    <li><a class="body-medium nav-link px-2" href="#">TPS</a></li>
+                    <li><a class="body-medium nav-link px-2" href="#">Acara</a></li>
                 </ul>
 
                 <div class="col-md-3 text-end">
@@ -78,13 +85,9 @@
                     <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
                         <div style="flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
                             <div style="width: 48px; height: 48px; position: relative">
-                                <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #394E91; border-radius: 9999px"></div>
+                                <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #394E91; color: white; border-radius: 9999px"></div>
                                 <!-- INI ICON PUTIHNYA BAGAIMANA?? T-T yaudah besok aja -->
-                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="ic:round-check">
-                                        <path id="Vector" d="M12.4995 21.56L7.87288 16.9333C7.62357 16.684 7.28544 16.544 6.93288 16.544C6.58031 16.544 6.24218 16.684 5.99288 16.9333C5.74357 17.1826 5.60352 17.5208 5.60352 17.8733C5.60352 18.0479 5.6379 18.2208 5.70471 18.3821C5.77151 18.5434 5.86943 18.6899 5.99288 18.8133L11.5662 24.3867C12.0862 24.9067 12.9262 24.9067 13.4462 24.3867L27.5529 10.28C27.8022 10.0307 27.9422 9.69258 27.9422 9.34001C27.9422 8.98744 27.8022 8.64932 27.5529 8.40001C27.3036 8.15071 26.9654 8.01065 26.6129 8.01065C26.2603 8.01065 25.9222 8.15071 25.6729 8.40001L12.4995 21.56Z" fill="white"/>
-                                    </g>
-                                </svg>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m382-354 339-339q12-12 28.5-12t28.5 12q12 12 12 28.5T778-636L410-268q-12 12-28 12t-28-12L182-440q-12-12-11.5-28.5T183-497q12-12 28.5-12t28.5 12l142 143Z"/></svg> -->
                             </div>
                             <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">KTP</div>
                         </div>
@@ -182,9 +185,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="align-self: stretch; height: 56px; flex-direction: column; justify-content: flex-start; align-items: flex-end; display: flex">
-                            <a class="btn btn-primary" style="padding: 16px; background: #394E91; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex" href="#" role="button">
-                                <div style="text-align: justify; color: white; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Selanjutnya</div>
+                        <div style="width: 100%; height: 100%; justify-content: flex-end; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <a class="btn  button-ghost" style="padding: 16px; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex" href="#" role="button">
+                                <div style="text-align: justify; color: #394E91; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Sebelumnya</div>
+                            </a>
+                            <a class="btn button-fill" style="padding: 16px; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex" href="#" role="button">
+                                <div style="text-align: justify; color: white; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Tambah Pengguna</div>
                             </a>
                         </div>
                     </div>
