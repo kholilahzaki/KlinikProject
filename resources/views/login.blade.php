@@ -19,9 +19,9 @@
         </style>
     </head>
 
-    <body style="display: flex; justify-content: center; align-items: center;">
-    <div>
-        <div style="flex: 1 1 0; align-self: stretch; flex-direction: column; justify-content: center; align-items: center; display: inline-flex;">
+    <body class="position-absolute top-50 start-50 translate-middle">
+    <!-- <div> -->
+        <div style="flex: 1 1 0; align-self: stretch; flex-direction: column; justify-content: center; align-items: center; display: inline-blox;">
             <div style="padding: 56px; background: #E8EAF2; border-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex; width: 400px;">
                 <div style="align-self: stretch; flex-direction: column; justify-content: center; align-items: center; display: flex">
                     <div style="text-align: justify; color: #394E91; font-size: 40px; font-family: Inter; font-weight: 700; line-height: 56px; word-wrap: break-word">Klinik Raycare</div>
@@ -58,7 +58,7 @@
                 </div> -->
             </div>
         </div>
-    </div>
+    <!-- </div> -->
     
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
