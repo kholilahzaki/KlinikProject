@@ -37,6 +37,15 @@ Route::get('/lc', function () {
     return view('User/lc');
 });
 
+
+Route::get('/bpjs', function () {
+    return view('User/bpjs');
+});
+
+Route::get('/lc', function () {
+    return view('User/lc');
+});
+
 Route::get('/informasi-lainnya', function () {
     return view('User/other');
 });
