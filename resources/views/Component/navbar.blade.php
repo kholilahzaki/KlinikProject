@@ -49,7 +49,7 @@
                 </ul>
 
                 <div class="col-md-3 text-end">
-                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <button type="button" class="btn btn-primary">Logout</button>
                 </div>
             </div>
         </header>
