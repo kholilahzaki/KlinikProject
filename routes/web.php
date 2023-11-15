@@ -18,7 +18,7 @@ use App\Http\Controllers\RegisterController;
 Route::get('/login', [LoginController::class, 'login']);
 
 Route::get('/register', [RegisterController::class, 'register']);
-Route::post('/register', [RegisterController::class, 'register']);
+Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/', function () {
     return view('dashboard/index');
