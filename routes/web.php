@@ -50,8 +50,9 @@ Route::get('/', function () {
 //     return view('event/index');
 // });
 
-Route::get('Event/create', [EventController::class, 'create'])->name('Event.create');
-Route::post('Event/store', [EventController::class, 'store'])->name('Event.store');
+Route::get('Event', [EventController::class, 'index']);
+Route::get('Event/create', [EventController::class, 'create']);
+Route::post('Event/create', [EventController::class, 'store']);
 
 Route::get('/detail-acara', function () {
     return view('event/detailAcara');

@@ -49,8 +49,8 @@
                 </div>
 
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a class="nav-link px-2" href="#" style="text-align: justify; font-size: 16px; font-family: Inter; line-height: 24px; word-wrap: break-word">Dashboard</a></li>
-                    <li><a class="nav-link px-2" href="#" style="text-align: justify; font-size: 16px; font-family: Inter; line-height: 24px; word-wrap: break-word">Acara</a></li>
+                    <li><a class="nav-link px-2" href="#" style="text-align: justify; font-size: 16px; font-family: 'Inter', Sans-serif; line-height: 24px; word-wrap: break-word">Dashboard</a></li>
+                    <li><a class="nav-link px-2" href="#" style="text-align: justify; font-size: 16px; font-family: 'Inter', Sans-serif; line-height: 24px; word-wrap: break-word">Acara</a></li>
                 </ul>
 
                 <div class="col-md-3 text-end">
@@ -60,78 +60,41 @@
         </header>
         <main>
             <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <div style="align-self: stretch; padding-top: 56px; padding-bottom: 56px; background: #394E91; justify-content: center; align-items: center; display: inline-flex">
-                    <div style="text-align: justify; color: white; font-size: 40px; font-family: Inter; font-weight: 700; line-height: 56px; word-wrap: break-word">Acara</div>
+                <div style="width: 100%; padding-top: 56px; padding-bottom: 56px; background: #394E91; justify-content: center; align-items: center; display: inline-flex">
+                    <div style="text-align: justify; color: white; font-size: 40px; font-family: 'Inter', Sans-serif; font-weight: 700; line-height: 56px; word-wrap: break-word">Acara</div>
                 </div>
-                <div style="align-self: stretch; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
-                    <div style="align-self: stretch; height: 610px; padding: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-end; gap: 32px; display: flex">
-                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                            <div style="text-align: justify; color: #394E91; font-size: 24px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Tambah Data Acara</div>
-                        </div>
-                        <div style="align-self: stretch; height: 376px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
-                            <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
-                                <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Tanggal Acara</div>
-                                <input type="date" id="tanggal-acara" placeholder="Pilih tanggal acara" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
-                            </div>
-                            <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
-                                <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Nama Acara</div>
-                                <input type="text" id="nama-acara" placeholder="Masukkan Nama Acara" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
-                            </div>
-                            <div style="align-self: stretch; height: 152px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
-                                <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Lokasi Acara</div>
-                                <textarea id="lokasi-acara" placeholder="Masukkan Lokasi Acara" rows="3" style="align-self: stretch; padding-top: 16px; padding-left: 16px; padding-right: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex"></textarea>
-                            </div>
-                        </div>
-                        <div style="align-self: stretch; height: 56px; flex-direction: column; justify-content: flex-start; align-items: flex-end; display: flex">
-                            <a class="btn button-fill" style="padding: 16px; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex" href="#" role="button">
-                                <div style="text-align: justify; color: white; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Tambah Acara</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- empty display -->
-                    <!-- <div style="align-self: stretch; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: center; align-items: center; gap: 24px; display: flex">
-                        <svg width="150" height="147" viewBox="0 0 200 197" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="undraw_no_data_re_kwbl 1" opacity="0.5" clip-path="url(#clip0_195_2852)">
-                            <path id="Vector" d="M126.968 44.7929H73.077C71.849 44.7944 70.6716 45.283 69.8032 46.1513C68.9348 47.0197 68.4463 48.1971 68.4448 49.4252V169.199L67.8272 169.388L54.6068 173.436C53.9802 173.627 53.3035 173.562 52.7251 173.254C52.1467 172.947 51.7139 172.423 51.5218 171.796L12.1972 43.3446C12.0058 42.718 12.071 42.0411 12.3785 41.4626C12.686 40.8842 13.2106 40.4514 13.837 40.2595L34.2096 34.0215L93.2705 15.9434L113.643 9.70534C113.953 9.60993 114.279 9.57658 114.602 9.60722C114.925 9.63786 115.238 9.73189 115.525 9.88391C115.812 10.0359 116.065 10.243 116.272 10.4932C116.478 10.7434 116.633 11.0319 116.728 11.3421L126.78 44.1753L126.968 44.7929Z" fill="#F2F2F2"/>
-                            <path id="Vector_2" d="M138.728 44.1755L126.613 4.60385C126.412 3.94452 126.082 3.33136 125.644 2.79942C125.205 2.26748 124.666 1.82718 124.057 1.50368C123.448 1.18018 122.781 0.979825 122.095 0.914063C121.409 0.848301 120.716 0.918424 120.057 1.12042L91.4145 9.88768L32.3567 27.9688L3.71411 36.7392C2.38352 37.1478 1.26941 38.0676 0.616305 39.2967C-0.0367959 40.5259 -0.175524 41.964 0.230578 43.2953L41.6366 178.535C41.9665 179.61 42.6321 180.55 43.5359 181.219C44.4396 181.887 45.5338 182.249 46.658 182.25C47.1783 182.25 47.6957 182.172 48.1927 182.018L67.8272 176.009L68.4448 175.817V175.172L67.8272 175.36L48.0106 181.428C46.8361 181.786 45.5675 181.664 44.4832 181.088C43.3989 180.512 42.5873 179.529 42.2265 178.356L0.823631 43.1131C0.644854 42.5316 0.582546 41.9205 0.640271 41.3149C0.697997 40.7092 0.874618 40.1209 1.16003 39.5837C1.44544 39.0464 1.83404 38.5707 2.30357 38.1838C2.77309 37.7969 3.31431 37.5064 3.89625 37.329L32.5389 28.5587L91.5968 10.4806L120.239 1.71026C120.681 1.57556 121.14 1.50687 121.601 1.50644C122.592 1.50867 123.555 1.82797 124.351 2.41758C125.147 3.00719 125.733 3.83612 126.024 4.78297L138.083 44.1755L138.274 44.7931H138.917L138.728 44.1755Z" fill="#3F3D56"/>
-                            <path id="Vector_3" d="M37.8858 40.3606C37.2905 40.3601 36.7111 40.169 36.2325 39.8151C35.7539 39.4613 35.4013 38.9634 35.2264 38.3944L31.2488 25.402C31.1419 25.053 31.1048 24.6864 31.1396 24.3231C31.1745 23.9597 31.2805 23.6068 31.4518 23.2845C31.623 22.9621 31.8561 22.6767 32.1376 22.4444C32.4192 22.2122 32.7438 22.0377 33.0928 21.9309L87.4254 5.29692C88.1303 5.08183 88.8916 5.15519 89.5424 5.50088C90.1933 5.84656 90.6803 6.43634 90.8968 7.14076L94.8744 20.1333C95.0894 20.8382 95.0159 21.5995 94.6703 22.2502C94.3246 22.901 93.7349 23.3881 93.0306 23.6046L38.6977 40.2386C38.4346 40.3193 38.161 40.3605 37.8858 40.3606Z" fill="#394E91"/>
-                            <path id="Vector_4" d="M58.7222 14.7706C62.1333 14.7706 64.8985 12.0054 64.8985 8.59428C64.8985 5.1832 62.1333 2.41797 58.7222 2.41797C55.3111 2.41797 52.5459 5.1832 52.5459 8.59428C52.5459 12.0054 55.3111 14.7706 58.7222 14.7706Z" fill="#394E91"/>
-                            <path id="Vector_5" d="M58.7225 12.5052C60.8826 12.5052 62.6336 10.7541 62.6336 8.59413C62.6336 6.43413 60.8826 4.68311 58.7225 4.68311C56.5625 4.68311 54.8115 6.43413 54.8115 8.59413C54.8115 10.7541 56.5625 12.5052 58.7225 12.5052Z" fill="white"/>
-                            <path id="Vector_6" d="M186.103 180.672H81.7236C81.0276 180.671 80.3604 180.395 79.8683 179.902C79.3762 179.41 79.0994 178.743 79.0986 178.047V52.977C79.0994 52.281 79.3762 51.6138 79.8683 51.1217C80.3604 50.6296 81.0276 50.3528 81.7236 50.3521H186.103C186.799 50.3529 187.466 50.6297 187.958 51.1218C188.45 51.6139 188.727 52.2811 188.728 52.977V178.047C188.727 178.743 188.45 179.41 187.958 179.902C187.466 180.394 186.799 180.671 186.103 180.672Z" fill="#E6E6E6"/>
-                            <path id="Vector_7" d="M138.083 44.1753H73.077C71.6853 44.1773 70.3511 44.731 69.367 45.7151C68.3829 46.6992 67.8291 48.0334 67.8271 49.4252V175.36L68.4448 175.172V49.4252C68.4463 48.1971 68.9348 47.0197 69.8032 46.1513C70.6716 45.2829 71.8489 44.7944 73.077 44.7929H138.274L138.083 44.1753ZM194.75 44.1753H73.077C71.6853 44.1773 70.3511 44.731 69.367 45.7151C68.3829 46.6992 67.8291 48.0334 67.8271 49.4252V190.863C67.8291 192.254 68.3829 193.589 69.367 194.573C70.3511 195.557 71.6853 196.11 73.077 196.112H194.75C196.142 196.11 197.476 195.557 198.46 194.573C199.444 193.589 199.998 192.254 200 190.863V49.4252C199.998 48.0334 199.444 46.6992 198.46 45.7151C197.476 44.731 196.142 44.1773 194.75 44.1753ZM199.382 190.863C199.381 192.091 198.892 193.268 198.024 194.136C197.156 195.005 195.978 195.493 194.75 195.495H73.077C71.8489 195.493 70.6716 195.005 69.8032 194.136C68.9348 193.268 68.4463 192.091 68.4448 190.863V49.4252C68.4463 48.1971 68.9348 47.0197 69.8032 46.1513C70.6716 45.2829 71.8489 44.7944 73.077 44.7929H194.75C195.978 44.7944 197.156 45.2829 198.024 46.1513C198.892 47.0197 199.381 48.1971 199.382 49.4252V190.863Z" fill="#3F3D56"/>
-                            <path id="Vector_8" d="M162.325 57.7633H105.502C104.766 57.7624 104.059 57.4693 103.538 56.9483C103.017 56.4272 102.724 55.7208 102.723 54.9839V41.396C102.724 40.6592 103.017 39.9527 103.538 39.4317C104.059 38.9106 104.766 38.6175 105.502 38.6167H162.325C163.061 38.6175 163.768 38.9106 164.289 39.4317C164.81 39.9527 165.103 40.6592 165.104 41.396V54.9839C165.103 55.7208 164.81 56.4272 164.289 56.9483C163.768 57.4693 163.061 57.7624 162.325 57.7633Z" fill="#394E91"/>
-                            <path id="Vector_9" d="M133.914 39.5435C137.325 39.5435 140.09 36.7783 140.09 33.3672C140.09 29.9561 137.325 27.1909 133.914 27.1909C130.503 27.1909 127.737 29.9561 127.737 33.3672C127.737 36.7783 130.503 39.5435 133.914 39.5435Z" fill="#394E91"/>
-                            <path id="Vector_10" d="M133.913 37.1289C135.991 37.1289 137.675 35.4446 137.675 33.3669C137.675 31.2893 135.991 29.605 133.913 29.605C131.836 29.605 130.151 31.2893 130.151 33.3669C130.151 35.4446 131.836 37.1289 133.913 37.1289Z" fill="white"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_195_2852">
-                            <rect width="200" height="195.225" fill="white" transform="translate(0 0.887695)"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-                        <div class="h3" style="opacity: 0.50; text-align: justify; color: #394E91; word-wrap: break-word">Belum ada acara yang terdaftar</div>
-                    </div> -->
-                    <!-- fill display -->
-                    <div style="width: 100%; height: 100%; padding: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                            <div style="text-align: justify; color: #394E91; font-size: 24px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Daftar Acara</div>
-                        </div>
-                        <div style="align-self: stretch; padding: 16px; background: white; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
-                            <div style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: #E8EAF2; border-radius: 5px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
-                                <div style="text-align: justify; color: #1D1B20; font-size: 24px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">12 </div>
-                                <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Dec 2023</div>
-                            </div>
-                            <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
-                                <div style="align-self: stretch; text-align: justify; color: #1D1B20; font-size: 18px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Acara  Ulang Tahun Klink Raycare ke-22</div>
-                                <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
-                                    <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">Gedung Serbaguna, Jalan Cakrawala no. 12, Jakarta Selatan</div>
+                <div style="align-self: stretch; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; padding: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                            @foreach ( $acara as $acr )
+                            <div style="align-self: stretch; height: 117px; padding: 16px; border-radius: 5px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                                <div style="align-self: stretch; text-align: justify; color: #1D1B20; font-size: 18px; font-family: 'Inter', Sans-serif; font-weight: 700; line-height: 25.20px; word-wrap: break-word">{{ $acr->e_namaAcara }}</div>
+                                <div style="align-self: stretch; height: 52px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                                    <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="ic:round-location-on">
+                                                <path id="Vector" d="M10.0002 1.6665C6.50016 1.6665 3.3335 4.34984 3.3335 8.49984C3.3335 11.1498 5.37516 14.2665 9.45016 17.8582C9.76683 18.1332 10.2418 18.1332 10.5585 17.8582C14.6252 14.2665 16.6668 11.1498 16.6668 8.49984C16.6668 4.34984 13.5002 1.6665 10.0002 1.6665ZM10.0002 9.99984C9.0835 9.99984 8.3335 9.24984 8.3335 8.33317C8.3335 7.4165 9.0835 6.6665 10.0002 6.6665C10.9168 6.6665 11.6668 7.4165 11.6668 8.33317C11.6668 9.24984 10.9168 9.99984 10.0002 9.99984Z" fill="#757575"/>
+                                            </g>
+                                        </svg>
+                                        <div style="text-align: justify; color: #757575; font-size: 16px; font-family: 'Inter', Sans-serif', Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">{{ $acr->e_lokasiAcara }}</div>
+                                    </div>
+                                    <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="ic:twotone-date-range">
+                                                <path id="Vector" opacity="0.3" d="M4.1665 6.66667H15.8332V5H4.1665V6.66667Z" fill="#757575"/>
+                                                <path id="Vector_2" d="M5.83333 9.1665H7.5V10.8332H5.83333V9.1665ZM15.8333 3.33317H15V1.6665H13.3333V3.33317H6.66667V1.6665H5V3.33317H4.16667C3.24167 3.33317 2.50833 4.08317 2.50833 4.99984L2.5 16.6665C2.5 17.1085 2.67559 17.5325 2.98816 17.845C3.30072 18.1576 3.72464 18.3332 4.16667 18.3332H15.8333C16.75 18.3332 17.5 17.5832 17.5 16.6665V4.99984C17.5 4.08317 16.75 3.33317 15.8333 3.33317ZM15.8333 16.6665H4.16667V8.33317H15.8333V16.6665ZM15.8333 6.6665H4.16667V4.99984H15.8333V6.6665ZM12.5 9.1665H14.1667V10.8332H12.5V9.1665ZM9.16667 9.1665H10.8333V10.8332H9.16667V9.1665Z" fill="#757575"/>
+                                            </g>
+                                        </svg>
+                                        <div class="GedungSerbagunaJalanCakrawalaNo12JakartaSelatan" style="text-align: justify; color: #757575; font-size: 16px; font-family: 'Inter', Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">{{ $acr->e_tglAcara }}</div>
+                                    </div>
                                 </div>
                             </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+
     </body>
 </html>
