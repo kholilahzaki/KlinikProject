@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,30 +22,33 @@ Route::get('/', function () {
     return view('dashboard/index');
 });
 
-Route::get('/ktp', function () {
-    return view('user/ktp');
-});
+// Route::get('/ktp', function () {
+//     return view('user/ktp');
+// });
 
-Route::get('/kk', function () {
-    return view('user/kk');
-});
+// Route::get('/kk', function () {
+//     return view('user/kk');
+// });
 
-Route::get('/bpjs', function () {
-    return view('user/bpjs');
-});
+// Route::get('/bpjs', function () {
+//     return view('user/bpjs');
+// });
 
-Route::get('/lc', function () {
-    return view('user/lc');
-});
+// Route::get('/lc', function () {
+//     return view('user/lc');
+// });
 
-Route::get('/informasi-lainnya', function () {
-    return view('user/other');
-});
+// Route::get('/informasi-lainnya', function () {
+//     return view('user/other');
+// });
 
 // MENU ACARA
-Route::get('/acara', function () {
-    return view('event/index');
-});
+// Route::get('/acara', function () {
+//     return view('event/index');
+// });
+
+Route::get('Event/create', [EventController::class, 'create'])->name('Event.create');
+Route::post('Event/store', [EventController::class, 'store'])->name('Event.store');
 
 Route::get('/detail-acara', function () {
     return view('event/detailAcara');
