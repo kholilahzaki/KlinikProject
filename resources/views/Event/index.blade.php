@@ -90,7 +90,7 @@
                     </div>
 
                     <!-- empty display -->
-                    <div style="align-self: stretch; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: center; align-items: center; gap: 24px; display: flex">
+                    <!-- <div style="align-self: stretch; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: center; align-items: center; gap: 24px; display: flex">
                         <svg width="150" height="147" viewBox="0 0 200 197" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="undraw_no_data_re_kwbl 1" opacity="0.5" clip-path="url(#clip0_195_2852)">
                             <path id="Vector" d="M126.968 44.7929H73.077C71.849 44.7944 70.6716 45.283 69.8032 46.1513C68.9348 47.0197 68.4463 48.1971 68.4448 49.4252V169.199L67.8272 169.388L54.6068 173.436C53.9802 173.627 53.3035 173.562 52.7251 173.254C52.1467 172.947 51.7139 172.423 51.5218 171.796L12.1972 43.3446C12.0058 42.718 12.071 42.0411 12.3785 41.4626C12.686 40.8842 13.2106 40.4514 13.837 40.2595L34.2096 34.0215L93.2705 15.9434L113.643 9.70534C113.953 9.60993 114.279 9.57658 114.602 9.60722C114.925 9.63786 115.238 9.73189 115.525 9.88391C115.812 10.0359 116.065 10.243 116.272 10.4932C116.478 10.7434 116.633 11.0319 116.728 11.3421L126.78 44.1753L126.968 44.7929Z" fill="#F2F2F2"/>
@@ -111,6 +111,24 @@
                             </defs>
                         </svg>
                         <div class="h3" style="opacity: 0.50; text-align: justify; color: #394E91; word-wrap: break-word">Belum ada acara yang terdaftar</div>
+                    </div> -->
+                    <!-- fill display -->
+                    <div style="width: 100%; height: 100%; padding: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                            <div style="text-align: justify; color: #394E91; font-size: 24px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Daftar Acara</div>
+                        </div>
+                        <div style="align-self: stretch; padding: 16px; background: white; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                            <div style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: #E8EAF2; border-radius: 5px; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+                                <div style="text-align: justify; color: #1D1B20; font-size: 24px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">12 </div>
+                                <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 500; line-height: 24px; word-wrap: break-word">Dec 2023</div>
+                            </div>
+                            <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                                <div style="align-self: stretch; text-align: justify; color: #1D1B20; font-size: 18px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Acara  Ulang Tahun Klink Raycare ke-22</div>
+                                <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+                                    <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">Gedung Serbaguna, Jalan Cakrawala no. 12, Jakarta Selatan</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
