@@ -52,7 +52,7 @@ Route::get('/', function () {
 
 Route::get('Event', [EventController::class, 'index']);
 Route::get('Event/create', [EventController::class, 'create']);
-Route::post('Event/create', [EventController::class, 'store']);
+Route::post('Event', [EventController::class, 'store']);
 
 Route::get('/detail-acara', function () {
     return view('event/detailAcara');
