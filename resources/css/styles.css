@@ -37,26 +37,3 @@
     font-weight: 600;
     line-height: 150%; /* 24px */
 }
-
-.container{
-    width: 400px;
-    background: white;
-    text-align: center;
-    border-radius: 10px;
-    padding: 40px;
-}
-
-.container .outer{
-    width: 100%;
-    overflow: hidden;
-}
-
-.container .outer form{
-    display: flex;
-    width: 400%;
-}
-
-.outer form .page{
-    width: 25%;
-    transition: margin-left 0.3s ease-in-out;
-}

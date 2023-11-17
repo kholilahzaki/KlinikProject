@@ -85,7 +85,7 @@
                                                 <path id="Vector_2" d="M5.83333 9.1665H7.5V10.8332H5.83333V9.1665ZM15.8333 3.33317H15V1.6665H13.3333V3.33317H6.66667V1.6665H5V3.33317H4.16667C3.24167 3.33317 2.50833 4.08317 2.50833 4.99984L2.5 16.6665C2.5 17.1085 2.67559 17.5325 2.98816 17.845C3.30072 18.1576 3.72464 18.3332 4.16667 18.3332H15.8333C16.75 18.3332 17.5 17.5832 17.5 16.6665V4.99984C17.5 4.08317 16.75 3.33317 15.8333 3.33317ZM15.8333 16.6665H4.16667V8.33317H15.8333V16.6665ZM15.8333 6.6665H4.16667V4.99984H15.8333V6.6665ZM12.5 9.1665H14.1667V10.8332H12.5V9.1665ZM9.16667 9.1665H10.8333V10.8332H9.16667V9.1665Z" fill="#757575"/>
                                             </g>
                                         </svg>
-                                        <div class="GedungSerbagunaJalanCakrawalaNo12JakartaSelatan" style="text-align: justify; color: #757575; font-size: 16px; font-family: 'Inter', Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">{{ $acr->e_tglAcara }}</div>
+                                        <div style="text-align: justify; color: #757575; font-size: 16px; font-family: 'Inter', Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">{{ $acr->e_tglAcara }}</div>
                                     </div>
                                 </div>
                             </div>

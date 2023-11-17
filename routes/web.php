@@ -57,3 +57,7 @@ Route::post('Event/create', [EventController::class, 'store']);
 Route::get('/detail-acara', function () {
     return view('event/detailAcara');
 });
+
+Route::get('/tambah-pengguna', function () {
+    return view('User/add');
+});
