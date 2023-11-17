@@ -49,8 +49,8 @@
                 </div>
 
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a class="nav-link px-2" href="#" style="text-align: justify; font-size: 16px; font-family: 'Inter', Sans-serif; line-height: 24px; word-wrap: break-word">Dashboard</a></li>
-                    <li><a class="nav-link px-2" href="#" style="text-align: justify; font-size: 16px; font-family: 'Inter', Sans-serif; line-height: 24px; word-wrap: break-word">Acara</a></li>
+                    <li><a class="nav-link px-2" href="/" style="text-align: justify; font-size: 16px; font-family: 'Inter', Sans-serif; line-height: 24px; word-wrap: break-word">Dashboard</a></li>
+                    <li><a class="nav-link px-2" href="/Event" style="text-align: justify; font-size: 16px; font-family: 'Inter', Sans-serif; line-height: 24px; word-wrap: break-word">Acara</a></li>
                 </ul>
 
                 <div class="col-md-3 text-end">
@@ -66,8 +66,14 @@
                 <div style="align-self: stretch; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
                     <div style="align-self: stretch; padding: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
                         <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div class="Frame373" style="width: 100%; height: 100%; justify-content: space-between; align-items: center; display: inline-flex">
+                            <div class="DaftarAcara" style="text-align: justify; color: #394E91; font-size: 24px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Daftar Acara</div>
+                                <div class="Button" style="padding: 16px; background: #394E91; border-radius: 10px; justify-content: center; align-items: center; display: flex">
+                                <a class="Button" style="text-align: justify; color: white; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word; text-decoration:none" href="/Event/create">Tambah Acara</a>
+                            </div>
+                        </div>
                             @foreach ( $acara as $acr )
-                            <div style="align-self: stretch; height: 117px; padding: 16px; border-radius: 5px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                            <a style="align-self: stretch; height: 117px; padding: 16px; border-radius: 5px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex; text-decoration:none" href="/detail-acara">
                                 <div style="align-self: stretch; text-align: justify; color: #1D1B20; font-size: 18px; font-family: 'Inter', Sans-serif; font-weight: 700; line-height: 25.20px; word-wrap: break-word">{{ $acr->e_namaAcara }}</div>
                                 <div style="align-self: stretch; height: 52px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
                                     <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
@@ -85,10 +91,10 @@
                                                 <path id="Vector_2" d="M5.83333 9.1665H7.5V10.8332H5.83333V9.1665ZM15.8333 3.33317H15V1.6665H13.3333V3.33317H6.66667V1.6665H5V3.33317H4.16667C3.24167 3.33317 2.50833 4.08317 2.50833 4.99984L2.5 16.6665C2.5 17.1085 2.67559 17.5325 2.98816 17.845C3.30072 18.1576 3.72464 18.3332 4.16667 18.3332H15.8333C16.75 18.3332 17.5 17.5832 17.5 16.6665V4.99984C17.5 4.08317 16.75 3.33317 15.8333 3.33317ZM15.8333 16.6665H4.16667V8.33317H15.8333V16.6665ZM15.8333 6.6665H4.16667V4.99984H15.8333V6.6665ZM12.5 9.1665H14.1667V10.8332H12.5V9.1665ZM9.16667 9.1665H10.8333V10.8332H9.16667V9.1665Z" fill="#757575"/>
                                             </g>
                                         </svg>
-                                        <div class="GedungSerbagunaJalanCakrawalaNo12JakartaSelatan" style="text-align: justify; color: #757575; font-size: 16px; font-family: 'Inter', Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">{{ $acr->e_tglAcara }}</div>
+                                        <div style="text-align: justify; color: #757575; font-size: 16px; font-family: 'Inter', Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">{{ $acr->e_tglAcara }}</div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                             @endforeach
                         </div>
                     </div>

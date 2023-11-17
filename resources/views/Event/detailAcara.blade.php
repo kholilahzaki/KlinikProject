@@ -59,7 +59,7 @@
         <main>
             <div style="width: 100%; height: 100%; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
                 <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex;">
-                    <div style="border-radius: 10px; justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+                    <a style="border-radius: 10px; justify-content: center; align-items: center; gap: 4px; display: inline-flex; text-decoration:none" href="/Event">
                         <button type="button" class="btn" style="text-align: justify; color: #394E91; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="Button-Icons">
@@ -68,7 +68,7 @@
                             </svg>    
                             Kembali ke Halaman Acara
                         </button>
-                    </div>
+                    </a>
                     <div style="justify-content: center; align-items: center; display: inline-flex">
                         <div style="text-align: justify; color: #1D1B20; font-size: 40px; font-family: Inter; font-weight: 700; line-height: 56px; word-wrap: break-word">Detail Acara</div>
                     </div>

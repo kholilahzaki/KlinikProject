@@ -50,7 +50,7 @@
                 </div>
 
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a class="nav-link px-2" href="#" style="text-align: justify; font-size: 16px; font-family: 'Inter', Sans-serif; line-height: 24px; word-wrap: break-word">Dashboard</a></li>
+                    <li><a class="nav-link px-2" href="/" style="text-align: justify; font-size: 16px; font-family: 'Inter', Sans-serif; line-height: 24px; word-wrap: break-word">Dashboard</a></li>
                     <li><a class="nav-link px-2" href="#" style="text-align: justify; font-size: 16px; font-family: 'Inter', Sans-serif; line-height: 24px; word-wrap: break-word">Acara</a></li>
                 </ul>
 

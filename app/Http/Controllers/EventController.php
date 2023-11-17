@@ -33,7 +33,5 @@ class EventController extends Controller
         $event->save();
 
         return redirect('Event');
-
-        //EventController::create($request->all());
     }
 }
