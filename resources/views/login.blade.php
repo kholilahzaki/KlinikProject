@@ -43,11 +43,11 @@
                     <div style="text-align: justify; color: #394E91; font-size: 40px; font-family:'Inter', Sans-serif; font-weight: 700; line-height: 56px; word-wrap: break-word">Klinik Raycare</div>
                     <div style="text-align: justify; color: #5C6EA8; font-size: 20px; font-family:'Inter', Sans-serif; font-weight: 500; line-height: 28px; word-wrap: break-word">Born to Serve</div>
                 </div>
-                <div style="align-self: stretch; height: 192px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
               
                 <form action="/login" method="post" style="width: 100%;">
                 @csrf
-                    <div style="width: 100%; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 3px; display: flex">
+                    <div style="width: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 3px; display: flex">
                         <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family:'Inter', Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Username</div>
                             <input class="form-control @error('username') is-invalid @enderror" type="text" style="width: 100%; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex" name="username" id="username" placeholder="Masukkan username" value="{{ old('username') }}" required autofocus>
                             <!-- <div style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
