@@ -19,7 +19,7 @@ return new class extends Migration
             $table->enum('ktp_jeniskelamin', ['L', 'P']);
             $table->text('ktp_alamat');
             $table->enum('ktp_agama', ['ISLAM', 'KRISTEN', 'KATOLIK', 'HINDU', 'BUDDHA', 'KONGHUCU']);
-            $table->string('ktp_statuskawin');
+            $table->enum('ktp_statuskawin', ['LAJANG', 'KAWIN', 'CERAI HIDUP', 'CERAI MATI']);
             $table->string('ktp_pekerjaan');
             $table->enum('ktp_kewarganegaraan', ['WNI', 'WNA']);
             $table->binary('ktp_fotoktp');
