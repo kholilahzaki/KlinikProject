@@ -90,7 +90,7 @@
                     </div>
 
                     <!-- main content -->
-                    <form action="/" method="POST">
+                    <form action="/" method="POST" style="align-self: stretch">
                     @csrf
                     <div style="align-self: stretch; padding-left: 40px; padding-right: 40px; padding-top: 32px; padding-bottom: 32px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: flex">
 

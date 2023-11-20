@@ -96,37 +96,14 @@
                         </select>
                         <div class="input-group gap-2">
                             <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" style="flex: 1 1 0; padding-left: 20px; padding-right: 20px; padding-top: 16px; padding-bottom: 16px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; gap: 8px; display: flex" />
-                            <button type="submit" style="background: #394E91; padding: 16px; padding-right: 24px; padding-left: 24px; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex" class="btn btn-primary">Primary</button>
+                            <button type="submit" style="background: #394E91; padding: 16px; padding-right: 24px; padding-left: 24px; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex" class="btn btn-primary">Cari Pengguna</button>
                             <!-- <a class="btn button-fill" style="padding: 16px; padding-right: 24px; padding-left: 24px; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex" href="#" role="button">
                                 <div style="text-align: justify; color: white; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Cari</div>
                             </a> -->
                         </div>
                     </div>
 
-                    <!-- @foreach ( $acara as $acr ) -->
-                            <a style="align-self: stretch; height: 117px; padding: 16px; border-radius: 5px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex; text-decoration:none" href="/detail-acara">
-                                <div style="align-self: stretch; text-align: justify; color: #1D1B20; font-size: 18px; font-family: 'Inter', Sans-serif; font-weight: 700; line-height: 25.20px; word-wrap: break-word">{{ $acr->e_namaAcara }}</div>
-                                <div style="align-self: stretch; height: 52px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
-                                    <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g id="ic:round-location-on">
-                                                <path id="Vector" d="M10.0002 1.6665C6.50016 1.6665 3.3335 4.34984 3.3335 8.49984C3.3335 11.1498 5.37516 14.2665 9.45016 17.8582C9.76683 18.1332 10.2418 18.1332 10.5585 17.8582C14.6252 14.2665 16.6668 11.1498 16.6668 8.49984C16.6668 4.34984 13.5002 1.6665 10.0002 1.6665ZM10.0002 9.99984C9.0835 9.99984 8.3335 9.24984 8.3335 8.33317C8.3335 7.4165 9.0835 6.6665 10.0002 6.6665C10.9168 6.6665 11.6668 7.4165 11.6668 8.33317C11.6668 9.24984 10.9168 9.99984 10.0002 9.99984Z" fill="#757575"/>
-                                            </g>
-                                        </svg>
-                                        <div style="text-align: justify; color: #757575; font-size: 16px; font-family: 'Inter', Sans-serif', Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">{{ $acr->e_lokasiAcara }}</div>
-                                    </div>
-                                    <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g id="ic:twotone-date-range">
-                                                <path id="Vector" opacity="0.3" d="M4.1665 6.66667H15.8332V5H4.1665V6.66667Z" fill="#757575"/>
-                                                <path id="Vector_2" d="M5.83333 9.1665H7.5V10.8332H5.83333V9.1665ZM15.8333 3.33317H15V1.6665H13.3333V3.33317H6.66667V1.6665H5V3.33317H4.16667C3.24167 3.33317 2.50833 4.08317 2.50833 4.99984L2.5 16.6665C2.5 17.1085 2.67559 17.5325 2.98816 17.845C3.30072 18.1576 3.72464 18.3332 4.16667 18.3332H15.8333C16.75 18.3332 17.5 17.5832 17.5 16.6665V4.99984C17.5 4.08317 16.75 3.33317 15.8333 3.33317ZM15.8333 16.6665H4.16667V8.33317H15.8333V16.6665ZM15.8333 6.6665H4.16667V4.99984H15.8333V6.6665ZM12.5 9.1665H14.1667V10.8332H12.5V9.1665ZM9.16667 9.1665H10.8333V10.8332H9.16667V9.1665Z" fill="#757575"/>
-                                            </g>
-                                        </svg>
-                                        <div style="text-align: justify; color: #757575; font-size: 16px; font-family: 'Inter', Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">{{ $acr->e_tglAcara }}</div>
-                                    </div>
-                                </div>
-                            </a>
-                        <!-- @endforeach -->
+                  
 
 
                     <!-- <div style="align-self: stretch; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: center; align-items: center; gap: 24px; display: flex">
