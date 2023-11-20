@@ -10,10 +10,31 @@
         <link rel="stylesheet" href="/css/styles.css">
 
         <style>
-            a.nav-link {color: #394E91;}
+            a.nav-link {
+                color: #394E91;
+                font-size: 16px;
+                font-family: Inter;
+                font-weight: 500;
+                line-height: 24px;
+                word-wrap: break-word
+            }
             /* lihat hover warnanya di figma: success */
-            a.nav-link:hover {color: #dfdfdf;} 
-            a.nav-link:focus {color: #000000; font-weight: 600;}
+            a.nav-link:hover {
+                color: #293A79;
+                font-size: 16px;
+                font-family: Inter;
+                font-weight: 500;
+                line-height: 24px;
+                word-wrap: break-word;
+            } 
+            a.nav-link:focus {
+                color: #1E2A62;
+                font-size: 16px;
+                font-family: Inter;
+                font-weight: 600;
+                line-height: 24px;
+                word-wrap: break-word;
+            }
         </style>
     </head>
 

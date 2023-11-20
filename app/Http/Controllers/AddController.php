@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Member;
 use App\Bpjs;
 use App\Kk;
 use App\Ktp;
 use App\Lc;
-use App\Member;
 
 class EventController extends Controller
 {
     public function index(){
-        $tambah = User::all();
+        $tambah = Member::all();
         //$events = 'ini halaman acara';
         return view('User.index', compact('tambah'));
     }
