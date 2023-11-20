@@ -13,21 +13,23 @@ return new class extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('no_nik');
-            $table->foreign('no_nik')->references('id')->on('ktps')->onDelete('cascade')->onUpdate('cascade');
-            $table->unsignedBigInteger('no_kk');
-            $table->foreign('no_kk')->references('id')->on('kks')->onDelete('cascade')->onUpdate('cascade');
-            $table->unsignedBigInteger('no_bpjs');
-            $table->foreign('no_bpjs')->references('id')->on('bpjs')->onDelete('cascade')->onUpdate('cascade');
-            $table->unsignedBigInteger('no_lc');
-            $table->foreign('no_lc')->references('id')->on('lcs')->onDelete('cascade')->onUpdate('cascade');
-            $table->integer('mem_notelp');
+            $table->bigInteger('ktp_id')->unsigned();
+            $table->foreign('ktp_id')->references('id')->on('ktps')->onDelete('cascade')->onUpdate('cascade');
+            $table->bigInteger('kk_id')->unsigned();
+            $table->foreign('kk_id')->references('id')->on('kks')->onDelete('cascade')->onUpdate('cascade');
+            $table->bigInteger('bpjs_id')->unsigned();
+            $table->foreign('bpjs_id')->references('id')->on('bpjs')->onDelete('cascade')->onUpdate('cascade');
+            $table->bigInteger('lc_id')->unsigned();
+            $table->foreign('lc_id')->references('id')->on('lcs')->onDelete('cascade')->onUpdate('cascade');
+            $table->integer('mem_notelp')->unique();
             $table->enum('mem_disabilitas', ['YA', 'TIDAK']);
             $table->text('mem_lokasitps');
             $table->enum('mem_status', ['SAKSI', 'SIMPATISAN']);
             $table->string('mem_koordinator');
             $table->timestamps();
         });
+
+
     }
 
     /**

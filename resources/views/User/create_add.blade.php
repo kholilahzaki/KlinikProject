@@ -90,10 +90,7 @@
                     </div>
 
                     <!-- main content -->
-                    <form action="/" method="POST">
-                    @csrf
                     <div style="align-self: stretch; padding-left: 40px; padding-right: 40px; padding-top: 32px; padding-bottom: 32px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: flex">
-
                         <!-- KTP -->
                         <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; display: inline-flex">
                             <div style="text-align: justify; color: #394E91; font-size: 24px; font-family: 'Inter',Sans-serif; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Kartu Tanda Penduduk (KTP)</div>
@@ -331,7 +328,7 @@
                                 <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                     <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Jenis Kartu BPJS</div>
                                     <select class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;">
-                                        <option selected style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">--Pilih salah satu--</option>
+                                        <option selected style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Pilih salah satu</option>
                                         <option style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">PBI APBD</option>
                                         <option style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">PBI APBN</option>
                                         <option style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Mandiri</option>
@@ -386,7 +383,6 @@
                             </div>
                         </div>
                     </div>
-                    </form>
                 </div>
             </div>
         </main>

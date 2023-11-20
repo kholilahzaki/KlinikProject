@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('ktps', function (Blueprint $table) {
             $table->id();
-            $table->integer('no_nik')->unsigned;
+            $table->integer('ktp_nik')->unique();
             $table->string('ktp_nama');
+            $table->string('ktp_tempatlahir');
             $table->date('ktp_tglLahir');
             $table->enum('ktp_jeniskelamin', ['L', 'P']);
             $table->text('ktp_alamat');
