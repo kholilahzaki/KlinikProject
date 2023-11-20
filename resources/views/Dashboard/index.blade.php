@@ -103,7 +103,7 @@
                         </div>
                     </div>
 
-                    @foreach ( $acara as $acr )
+                    <!-- @foreach ( $acara as $acr ) -->
                             <a style="align-self: stretch; height: 117px; padding: 16px; border-radius: 5px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex; text-decoration:none" href="/detail-acara">
                                 <div style="align-self: stretch; text-align: justify; color: #1D1B20; font-size: 18px; font-family: 'Inter', Sans-serif; font-weight: 700; line-height: 25.20px; word-wrap: break-word">{{ $acr->e_namaAcara }}</div>
                                 <div style="align-self: stretch; height: 52px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
@@ -126,7 +126,7 @@
                                     </div>
                                 </div>
                             </a>
-                        @endforeach
+                        <!-- @endforeach -->
 
 
                     <!-- <div style="align-self: stretch; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: center; align-items: center; gap: 24px; display: flex">
