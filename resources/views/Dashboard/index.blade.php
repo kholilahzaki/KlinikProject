@@ -14,6 +14,7 @@
             a.nav-link {color: #394E91;}
             a.nav-link:hover {color: #293A79;} 
             body {background-color: #F5F6FA;}
+            .main-contain {width: 100%; height: 100%; background: white; padding-left: 40px; padding-right: 40px; padding-top: 32px; padding-bottom: 32px; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex;}
 
             /* button primary */
             a.button-fill {background: #394E91;}
@@ -118,7 +119,7 @@
                             </a> -->
                         </div>
                     </div>
-                    <div style="width: 100%; height: 100%; padding-left: 40px; padding-right: 40px; padding-top: 32px; padding-bottom: 32px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+                    <div class="main-contain">
                         <div style="align-self: stretch; padding: 24px; background: #394E91; border-radius: 5px; justify-content: space-between; align-items: center; display: inline-flex">
                             <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
                                 <div style="text-align: justify; color: white; font-size: 32px; font-family: Inter; font-weight: 500; line-height: 44.80px; word-wrap: break-word">John Doe</div>
