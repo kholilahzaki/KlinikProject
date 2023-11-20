@@ -44,8 +44,8 @@
                 </div>
 
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a class="body-medium nav-link px-2" href="#">Dashboard</a></li>
-                    <li><a class="body-medium nav-link px-2"  href="/Event/create">Acara</a></li>
+                    <li><a class="body-medium nav-link px-2" href="/">Dashboard</a></li>
+                    <li><a class="body-medium nav-link px-2"  href="/Event">Acara</a></li>
                 </ul>
 
                 <div class="col-md-3 text-end">

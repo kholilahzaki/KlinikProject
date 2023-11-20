@@ -1,9 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\EventController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Middleware\RedirectIfAuthenticated;
+// use App\Http\Middleware\Authenticate;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,14 +19,19 @@ use App\Http\Controllers\EventController;
 |
 */
 
-Route::get('/login', [LoginController::class, 'login']);
+// Auth::routes();
 
+Route::get('/login', [LoginController::class, 'login']);
+Route::post('/login', [LoginController::class, 'authenticate']);
+ 
 Route::get('/register', [RegisterController::class, 'register']);
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/', function () {
-    return view('dashboard/index');
-});
+Route::get('/', [DashboardController::class, 'index']);
+
+// Route::get('/', function () {
+//     return view('dashboard/index');
+// });
 
 // Route::get('/ktp', function () {
 //     return view('user/ktp');
@@ -52,7 +60,7 @@ Route::get('/', function () {
 
 Route::get('Event', [EventController::class, 'index']);
 Route::get('Event/create', [EventController::class, 'create']);
-Route::post('Event/create', [EventController::class, 'store']);
+Route::post('Event', [EventController::class, 'store']);
 
 Route::get('/detail-acara', function () {
     return view('event/detailAcara');
