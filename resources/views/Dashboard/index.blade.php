@@ -59,7 +59,33 @@
                         </div>
                     </div>
 
-                    <div style="align-self: stretch; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: center; align-items: center; gap: 24px; display: flex">
+                    @foreach ( $acara as $acr )
+                            <a style="align-self: stretch; height: 117px; padding: 16px; border-radius: 5px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex; text-decoration:none" href="/detail-acara">
+                                <div style="align-self: stretch; text-align: justify; color: #1D1B20; font-size: 18px; font-family: 'Inter', Sans-serif; font-weight: 700; line-height: 25.20px; word-wrap: break-word">{{ $acr->e_namaAcara }}</div>
+                                <div style="align-self: stretch; height: 52px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                                    <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="ic:round-location-on">
+                                                <path id="Vector" d="M10.0002 1.6665C6.50016 1.6665 3.3335 4.34984 3.3335 8.49984C3.3335 11.1498 5.37516 14.2665 9.45016 17.8582C9.76683 18.1332 10.2418 18.1332 10.5585 17.8582C14.6252 14.2665 16.6668 11.1498 16.6668 8.49984C16.6668 4.34984 13.5002 1.6665 10.0002 1.6665ZM10.0002 9.99984C9.0835 9.99984 8.3335 9.24984 8.3335 8.33317C8.3335 7.4165 9.0835 6.6665 10.0002 6.6665C10.9168 6.6665 11.6668 7.4165 11.6668 8.33317C11.6668 9.24984 10.9168 9.99984 10.0002 9.99984Z" fill="#757575"/>
+                                            </g>
+                                        </svg>
+                                        <div style="text-align: justify; color: #757575; font-size: 16px; font-family: 'Inter', Sans-serif', Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">{{ $acr->e_lokasiAcara }}</div>
+                                    </div>
+                                    <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="ic:twotone-date-range">
+                                                <path id="Vector" opacity="0.3" d="M4.1665 6.66667H15.8332V5H4.1665V6.66667Z" fill="#757575"/>
+                                                <path id="Vector_2" d="M5.83333 9.1665H7.5V10.8332H5.83333V9.1665ZM15.8333 3.33317H15V1.6665H13.3333V3.33317H6.66667V1.6665H5V3.33317H4.16667C3.24167 3.33317 2.50833 4.08317 2.50833 4.99984L2.5 16.6665C2.5 17.1085 2.67559 17.5325 2.98816 17.845C3.30072 18.1576 3.72464 18.3332 4.16667 18.3332H15.8333C16.75 18.3332 17.5 17.5832 17.5 16.6665V4.99984C17.5 4.08317 16.75 3.33317 15.8333 3.33317ZM15.8333 16.6665H4.16667V8.33317H15.8333V16.6665ZM15.8333 6.6665H4.16667V4.99984H15.8333V6.6665ZM12.5 9.1665H14.1667V10.8332H12.5V9.1665ZM9.16667 9.1665H10.8333V10.8332H9.16667V9.1665Z" fill="#757575"/>
+                                            </g>
+                                        </svg>
+                                        <div style="text-align: justify; color: #757575; font-size: 16px; font-family: 'Inter', Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">{{ $acr->e_tglAcara }}</div>
+                                    </div>
+                                </div>
+                            </a>
+                        @endforeach
+
+
+                    <!-- <div style="align-self: stretch; padding-left: 176px; padding-right: 176px; padding-top: 40px; padding-bottom: 40px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: center; align-items: center; gap: 24px; display: flex">
                         <svg width="150" viewBox="0 0 200 197" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="undraw_no_data_re_kwbl 1" opacity="0.5" clip-path="url(#clip0_195_2852)">
                             <path id="Vector" d="M126.968 44.7929H73.077C71.849 44.7944 70.6716 45.283 69.8032 46.1513C68.9348 47.0197 68.4463 48.1971 68.4448 49.4252V169.199L67.8272 169.388L54.6068 173.436C53.9802 173.627 53.3035 173.562 52.7251 173.254C52.1467 172.947 51.7139 172.423 51.5218 171.796L12.1972 43.3446C12.0058 42.718 12.071 42.0411 12.3785 41.4626C12.686 40.8842 13.2106 40.4514 13.837 40.2595L34.2096 34.0215L93.2705 15.9434L113.643 9.70534C113.953 9.60993 114.279 9.57658 114.602 9.60722C114.925 9.63786 115.238 9.73189 115.525 9.88391C115.812 10.0359 116.065 10.243 116.272 10.4932C116.478 10.7434 116.633 11.0319 116.728 11.3421L126.78 44.1753L126.968 44.7929Z" fill="#F2F2F2"/>
@@ -80,7 +106,7 @@
                             </defs>
                         </svg>
                         <div style="opacity: 0.50; text-align: justify; color: #394E91; font-size: 24px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Cari atau tambah pengguna untuk ditampilkan disini</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </main>

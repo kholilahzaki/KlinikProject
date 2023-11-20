@@ -13,12 +13,13 @@ return new class extends Migration
     {
         Schema::create('penarikan_lcs', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('no_lc');
-            $table->foreign('no_lc')->references('id')->on('lcs')->onDelete('cascade')->onUpdate('cascade');
+            $table->bigInteger('lc_id')->unsigned();
+            $table->foreign('lc_id')->references('id')->on('lcs')->onDelete('cascade')->onUpdate('cascade');
             $table->date('p_tglPenarikan');
             $table->enum('p_alasanPenarikan', ['TIDAK MENDUKUNG', 'MENINGGAL']);
             $table->timestamps();
         });
+
     }
 
     /**

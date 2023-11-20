@@ -5,8 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Penarikan_lc extends Model
+class Add extends Model
 {
     use HasFactory;
-    protected $fillable = ['p_tglPenarikan', 'p__alasanPenarikan'];
 }
