@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Bpjs extends Model
 {
     use HasFactory;
-    protected $fillable = ['no_bpjs', 'bpjs_jenis'];
+    protected $fillable = ['bpjs_no', 'bpjs_jenis'];
+
+    public function member(){
+        return $this->belongsTo(Member::class);
+    }
 }
 
