@@ -14,3 +14,4 @@ class Bpjs extends Model
         return $this->belongsTo(Member::class);
     }
 }
+

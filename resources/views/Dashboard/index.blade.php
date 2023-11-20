@@ -16,11 +16,55 @@
             body {background-color: #F5F6FA;}
 
             /* button primary */
-            .button {background: #394E91;}
+            a.button-fill {background: #394E91;}
+            a.button-fill:hover {background: #293A79;}
 
             /* Button in hero section */
-            .button-hero {background: #7888B6;}
-            .button-hero:hover {background: #5C6EA8;}
+            a.button-hero {background: #7888B6;}
+            a.button-hero:hover {background: #5C6EA8;}
+
+            /* button outline: ubah data */
+            .button-outline:hover {background: rgba(57, 78, 145, 0.15);}
+
+            .accordion {
+                background-color: #FFFFFF;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+            }
+
+            .active, .accordion:hover {
+                background-color: #E8EAF2;
+            }
+
+            .accordion:after {
+                content: '\002B';
+                color: #777;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .active:after {
+                content: "\2212";
+            }
+
+            .panel {
+                align-self: stretch;
+                padding: 0px 16px;
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                /* border: 1px #DADDE5 solid; */
+                /* background-color: rosybrown; */
+            }
         </style>
     </head>
     <body>
@@ -52,7 +96,7 @@
                         </select>
                         <div class="input-group gap-2">
                             <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" style="flex: 1 1 0; padding-left: 20px; padding-right: 20px; padding-top: 16px; padding-bottom: 16px; background: white; border-radius: 10px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; gap: 8px; display: flex" />
-                            <button type="submit" style="background: #394E91; padding: 16px; padding-right: 24px; padding-left: 24px; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex" class="btn btn-primary">Cari Member</button>
+                            <button type="submit" style="background: #394E91; padding: 16px; padding-right: 24px; padding-left: 24px; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex" class="btn btn-primary">Primary</button>
                             <!-- <a class="btn button-fill" style="padding: 16px; padding-right: 24px; padding-left: 24px; border-radius: 10px; justify-content: center; align-items: center; display: inline-flex" href="#" role="button">
                                 <div style="text-align: justify; color: white; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Cari</div>
                             </a> -->
@@ -110,6 +154,22 @@
                 </div>
             </div>
         </main>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+            }
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
