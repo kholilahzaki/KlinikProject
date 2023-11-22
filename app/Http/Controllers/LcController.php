@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Lc;
+use App\Models\Lc;
 use Illuminate\Http\Request;
 
 class LcController extends Controller

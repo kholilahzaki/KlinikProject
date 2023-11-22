@@ -4,17 +4,28 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Member;
-use App\Bpjs;
-use App\Kk;
-use App\Ktp;
-use App\Lc;
+use App\Models\Bpjs;
+use App\Models\Kk;
+use App\Models\Ktp;
+use App\Models\Lc;
 
 class EventController extends Controller
 {
     public function index(){
-        $tambah = Member::all();
-        //$events = 'ini halaman acara';
-        return view('User.index', compact('tambah'));
+        // $tambah = Member::all();
+        // //$events = 'ini halaman acara';
+        // return view('User.index', compact('tambah'));
+
+        //butuh dari tabel ktp, bpjs, lc, member
+
+        $dataktp = Ktp::all();
+        $databpjs = Bpjs::all();
+        $datalc = Lc::all();
+        $datamember = Member::all();
+
+        return view('Dashboard.index', compact('dataktp', 'databpjs', 'datalc', 'datamember'));
+        
+
     }
 
     public function create(){

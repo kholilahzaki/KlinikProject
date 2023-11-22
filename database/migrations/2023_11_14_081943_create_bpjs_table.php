@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('bpjs', function (Blueprint $table) {
             $table->id();
-            $table->integer('bpjs_no')->unique();
+            $table->string('bpjs_no')->unique();
             $table->enum('bpjs_jenis', ['PBI APBD', 'PBI APBN', 'MANDIRI', 'PERUSAHAAN']);
             $table->timestamps();
         });

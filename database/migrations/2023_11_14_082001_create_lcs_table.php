@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('lcs', function (Blueprint $table) {
             $table->id();
-            $table->integer('lc_no')->unique();
+            $table->string('lc_no')->unique();
             $table->enum('lc_jenis', ['L', 'R', 'LR', 'LN', 'PADI']);
             $table->date('lc_tglInput');
             $table->date('lc_tglUpdate');

@@ -101,21 +101,21 @@
                         <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
                             <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">NIK</div>
-                                <input type="text" id="nik" placeholder="Masukkan NIK Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                                <input type="text" id="ktp_nik" placeholder="Masukkan NIK Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex" name="ktp_nik" value="{{old('ktp_nik')}}">
                             </div>
                             <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Nama</div>
-                                <input type="text" id="nama-pengguna" placeholder="Masukkan Nama Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                                <input type="text" id="ktp_nama" placeholder="Masukkan Nama Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex" name="ktp_nama" value="{{old('ktp_nama')}}">
                             </div>
                             <!-- Tempat dan tinggal lahir pengguna -->
                             <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
                                 <div style="flex: 1 0 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
                                     <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Tempat Lahir</div>
-                                    <input type="text" id="tempat-lahir" placeholder="Masukkan Tempat Lahir Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                                    <input type="text" id="ktp_tempatlahir" placeholder="Masukkan Tempat Lahir Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex" name="ktp_tempatlahir" value="{{old('ktp_tempatlahir')}}">
                                 </div>
                                 <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
                                     <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Tanggal Lahir</div>
-                                    <input type="date" id="tanggal-lahir" placeholder="Masukkan Tanggal Lahir Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                                    <input type="date" id="ktp_tglLahir" placeholder="Masukkan Tanggal Lahir Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex" name="ktp_tglLahir" value="{{old('ktp_tglLahir')}}">
                                 </div>
                             </div>
                             <!-- Jenis kelamin pengguna -->
@@ -123,78 +123,33 @@
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Jenis Kelamin</div>
                                 <div style="justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="laki-laki">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="ktp_jeniskelamin" name="ktp_jeniskelamin" value="{{old('ktp_jeniskelamin')}}">
                                         <label class="form-check-label" for="laki-laki" style="text-align: right; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">
                                             Laki-laki
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="perempuan">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="ktp_jeniskelamin" name="ktp_jeniskelamin" value="{{old('ktp_jeniskelamin')}}">
                                         <label class="form-check-label" for="perempuan" style="text-align: right; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">
                                             Perempuan
                                         </label>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Provinsi & Kota/Kabupaten -->
-                            <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-                                <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-                                    <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Provinsi</div>
-                                    <select class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;">
-                                        <option selected style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Pilih salah satu</option>
-                                        <option value="1" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">One</option>
-                                        <option value="2" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Two</option>
-                                        <option value="3" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Three</option>
-                                    </select>
-                                    <!-- <div style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 10px; border: 1px #DADDE5 solid; justify-content: space-between; align-items: center; display: inline-flex">
-                                        <div style="width: 676px; height: 24px; padding-right: 563px; justify-content: flex-start; align-items: center; display: flex">
-                                            <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Pilih salah satu</div>
-                                        </div>
-                                        <div style="width: 24px; height: 24px; position: relative">
-                                            <div style="width: 11.17px; height: 6.58px; left: 6.41px; top: 9px; position: absolute; background: #1D1B20"></div>
-                                        </div>
-                                    </div> -->
-                                </div>
-                                <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-                                    <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Kabupaten/Kota</div>
-                                    <select class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;">
-                                        <option selected style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Pilih salah satu</option>
-                                        <option value="1" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">One</option>
-                                        <option value="2" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Two</option>
-                                        <option value="3" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Three</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- Kecamatan & Kode pos -->
-                            <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-                                <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-                                    <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Kecamatan</div>
-                                    <select class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;">
-                                        <option selected style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Pilih salah satu</option>
-                                        <option value="1" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">One</option>
-                                        <option value="2" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Two</option>
-                                        <option value="3" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Three</option>
-                                    </select>
-                                </div>
-                                <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-                                    <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Kode Pos</div>
-                                    <input type="text" id="kode-pos" placeholder="Masukkan Kode Pos" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
-                                </div>
-                            </div>
                             <!-- Alamat lengkap -->
                             <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Alamat Lengkap</div>
                                 <div style="align-self: stretch; border-radius: 5px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 4px; display: flex">
-                                    <textarea id="alamat" placeholder="Masukkan Alamat Lengkap Pengguna" rows="3" style="align-self: stretch; padding-top: 16px; padding-left: 16px; padding-right: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex"></textarea>
+                                    <textarea id="ktp_alamat" placeholder="Masukkan Alamat Lengkap Pengguna" rows="3" style="align-self: stretch; padding-top: 16px; padding-left: 16px; padding-right: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex" name="ktp_alamat" value="{{old('ktp_alamat')}}"></textarea>
                                     <div style="padding-right: 110px; justify-content: flex-start; align-items: center; display: inline-flex">
-                                        <div style="text-align: justify; color: #757575; font-size: 14px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 21px; word-wrap: break-word">???</div>
+                                        <div style="text-align: justify; color: #757575; font-size: 14px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 21px; word-wrap: break-word"></div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Agama -->
                             <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Agama</div>
-                                <select class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;">
+                                <select id="ktp_agama" class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;" name="ktp_agama" value="{{old('ktp_agama')}}">
                                     <option selected style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Pilih salah satu</option>
                                     <option value="1" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Budha</option>
                                     <option value="1" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Hindu</option>
@@ -207,7 +162,7 @@
                             <!-- Status Nikah -->
                             <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Status Nikah</div>
-                                <select class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;">
+                                <select id="ktp_statuskawin" class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;" name="ktp_statuskawin" value="{{old('ktp_statuskawin')}}">
                                     <option selected style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Pilih salah satu</option>
                                     <option value="1" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Kawin</option>
                                     <option value="2" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Tidak Kawin</option>
@@ -216,13 +171,13 @@
                             <!-- Pekerjaan -->
                             <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Pekerjaan</div>
-                                <input type="text" id="pekerjaan" placeholder="Masukkan Pekerjaan Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                                <input type="text" id="ktp_pekerjaan" placeholder="Masukkan Pekerjaan Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex" name="ktp_pekerjaan" value="{{old('ktp_pekerjaan')}}">
                             </div>
                             <!-- Warna Negara & Asal Negara -->
                             <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
                                 <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
                                     <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Warna Negara</div>
-                                    <select class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;">
+                                    <select id="ktp_kewarganegaraan" class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;" name="ktp_kewarganegaraan" value="{{old('ktp_kewarganegaraan')}}">
                                         <option selected style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Pilih salah satu</option>
                                         <option value="1" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">WNI</option>
                                         <option value="2" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">WNA</option>
@@ -241,7 +196,7 @@
                             <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Unggah Foto KTP</div>
                                 <div style="align-self: stretch; border-radius: 5px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 4px; display: flex">
-                                    <input class="form-control p-3 pr-5" type="file" id="formFile" style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex; border-radius: 5px; border: 1px #DADDE5 solid;">
+                                    <input class="form-control p-3 pr-5" type="file" id="ktp_fotoktp" style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex; border-radius: 5px; border: 1px #DADDE5 solid;" name="ktp_fotoktp" value="{{old('ktp_fotoktp')}}">
                                     <div style="padding-right: 110px; justify-content: flex-start; align-items: center; display: inline-flex">
                                         <div style="text-align: justify; color: #757575; font-size: 14px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 21px; word-wrap: break-word">Format: JPG atau PDF</div>
                                     </div>
@@ -256,7 +211,7 @@
                         <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
                             <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Status</div>
-                                <select class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;">
+                                <select id="" class="form-select p-3 align-self-stretch" style="border-radius: 5px; border: 1px #DADDE5 solid;">
                                     <option selected style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Pilih salah satu</option>
                                     <option value="1" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Kepala Keluarga</option>
                                     <option value="2" style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 400; line-height: 24px; word-wrap: break-word">Pasangan</option>
@@ -273,7 +228,7 @@
                             </div>
                             <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Nama</div>
-                                <input type="text" id="nama-pengguna" placeholder="Masukkan Nama Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex">
+                                <input type="text" id="ktp_nama" placeholder="Masukkan Nama Pengguna" style="align-self: stretch; padding: 16px; background: #FAFAFA; border-radius: 5px; border: 1px #DADDE5 solid; justify-content: flex-start; align-items: center; display: inline-flex" name="ktp_nama" value="{{old('ktp_nama')}}">
                             </div>
                             <div style="align-self: stretch; height: 88px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                                 <div style="text-align: justify; color: #1D1B20; font-size: 16px; font-family: 'Inter',Sans-serif; font-weight: 500; line-height: 24px; word-wrap: break-word">Unggah Foto KK</div>
