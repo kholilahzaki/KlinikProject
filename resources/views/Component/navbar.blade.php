@@ -70,7 +70,7 @@
                 </ul>
 
                 <div class="col-md-3 text-end">
-                    <a href="/login"><button type="button" class="btn btn-primary">Logout</button></a>
+                    <a href="/logout"><button type="button" class="btn btn-primary">Logout</button></a>
                 </div>
             </div>
         </header>
