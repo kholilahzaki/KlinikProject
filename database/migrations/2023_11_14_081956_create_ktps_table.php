@@ -23,6 +23,7 @@ return new class extends Migration
             $table->enum('ktp_statuskawin', ['LAJANG', 'KAWIN', 'CERAI HIDUP', 'CERAI MATI']);
             $table->string('ktp_pekerjaan');
             $table->enum('ktp_kewarganegaraan', ['WNI', 'WNA']);
+            $table->string('ktp_negaraAsal');
             $table->binary('ktp_fotoktp');
             $table->timestamps();
         });

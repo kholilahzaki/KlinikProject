@@ -22,4 +22,8 @@ class Kk extends Model
     public function ktp(){
         return $this->belongsTo(Ktp::class);
     }
+
+    public function lc(){
+        return $this->hasMany(Lc::class);
+    }
 }

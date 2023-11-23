@@ -15,8 +15,6 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('lc_id')->unsigned();
             $table->foreign('lc_id')->references('id')->on('lcs')->onDelete('cascade')->onUpdate('cascade');
-            $table->date('p_tglPenarikan');
-            $table->enum('p_alasanPenarikan', ['TIDAK MENDUKUNG', 'MENINGGAL']);
             $table->timestamps();
         });
 

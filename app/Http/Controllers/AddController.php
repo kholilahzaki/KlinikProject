@@ -39,8 +39,6 @@ class EventController extends Controller
                 // 'e_namaAcara' => 'required',
                 // 'e_lokasiAcara' => 'required',
 
-                'ktp_nik' => 'required',
-                'ktp_nama' => 'required',
                 'ktp_tempatlahir' => 'required',
                 'ktp_tglLahir' => 'required',
                 'ktp_jeniskelamin' => 'required',
@@ -50,11 +48,11 @@ class EventController extends Controller
                 'ktp_pekerjaan' => 'required',
                 'ktp_kewarganegaraan' => 'required',
                 'ktp_fotoktp' => 'required',
+                'kk_nik' => 'required',
+                'kk_status' => 'required',
+                'kk_nama' => 'required',
                 'kk_no' => 'required',
                 'kk_no_dokumen' => 'required',
-                'kk_kepalakeluarga' => 'required',
-                'kk_pasangan' => 'required',
-                'kk_anak' => 'required',
                 'kk_fotokk' => 'required',
                 'bpjs_no' => 'required',
                 'bpjs_jenis' => 'required',
@@ -71,8 +69,6 @@ class EventController extends Controller
             ]);
 
         $ktp = new Ktp;
-        $ktp->ktp_nik = $request -> ktp_nik;
-        $ktp->ktp_nama = $request -> ktp_nama;
         $ktp->ktp_tempatlahir = $request -> ktp_tempatlahir;
         $ktp->ktp_tglLahir = $request -> ktp_tglLahir;
         $ktp->ktp_jeniskelamin = $request -> ktp_jeniskelamin;
@@ -85,11 +81,11 @@ class EventController extends Controller
         $ktp->save();
 
         $kk = new Kk;
+        $kk->kk_nik = $request -> kk_nik;
+        $kk->kk_status = $request -> kk_status;
+        $kk->kk_nama = $request -> kk_nama;
         $kk->kk_no = $request -> kk_no;
         $kk->kk_no_dokumen = $request -> kk_no_dokumen;
-        $kk->kk_kepalakeluarga = $request -> kk_kepalakeluarga;
-        $kk->kk_pasangan = $request -> kk_pasangan;
-        $kk->kk_anak = $request -> kk_anak;
         $kk->kk_fotokk = $request -> kk_fotokk;
         $kk->save();
 
@@ -103,6 +99,7 @@ class EventController extends Controller
         $lc->lc_jenis = $request -> lc_jenis;
         $lc->lc_tglInput = $request -> lc_tglInput;
         $lc->lc_formlc = $request -> lc_formlc;
+        $lc->lc_isActive = $request -> lc_isActive;
         $lc->save();
 
         $member = new Member;

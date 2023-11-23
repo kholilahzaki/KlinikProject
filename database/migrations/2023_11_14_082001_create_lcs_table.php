@@ -14,12 +14,14 @@ return new class extends Migration
         Schema::create('lcs', function (Blueprint $table) {
             $table->id();
             $table->string('lc_no')->unique();
+            $table->bigInteger('kk_id')->unsigned();
+            $table->foreign('kk_id')->references('id')->on('kks')->onDelete('cascade')->onUpdate('cascade');
             $table->enum('lc_jenis', ['L', 'R', 'LR', 'LN', 'PADI']);
-            $table->date('lc_tglInput');
-            $table->date('lc_tglUpdate');
-            $table->enum('lc_jenisUpdate', ['L', 'R', 'LR', 'LN', 'PADI']);
+            $table->date('lc_tgldibuat');
             $table->enum('lc_sumberdata', ['GAPLE', 'BAZAR', 'REKOMENDASI']);
             $table->binary('lc_formlc');
+            $table->enum('lc_isActive', ['0', '1']);
+            $table->enum('lc_alasan', ['UPGRADE', 'BERHENTI SEMENTARA', 'TIDAK MENDUKUNG', 'MENINGGAL']);
             $table->timestamps();
         });
     }

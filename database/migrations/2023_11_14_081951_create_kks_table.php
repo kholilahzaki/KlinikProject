@@ -14,12 +14,10 @@ return new class extends Migration
         Schema::create('kks', function (Blueprint $table) {
             $table->id();
             $table->string('kk_nik')->unique();
+            $table->enum('kk_status', ['KEPALA KELUARGA', 'ISTRI', 'ANAK']);
             $table->string('kk_nama');
             $table->string('kk_no');
             $table->string('kk_no_dokumen');
-            $table->string('kk_kepalakeluarga');
-            $table->string('kk_pasangan');
-            $table->string('kk_anak');
             $table->binary('kk_fotokk');
             $table->timestamps();
         });

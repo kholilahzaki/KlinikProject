@@ -9,4 +9,8 @@ class Event extends Model
 {
     use HasFactory;
     protected $fillable = ['e_tglAcara', 'e_namaAcara', 'e_lokasiAcara'];
+
+    public function member(){
+        return $this->hasMany(Member::class);
+    }
 }

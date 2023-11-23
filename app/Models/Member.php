@@ -25,4 +25,8 @@ class Member extends Model
     public function lc(){
         return $this->hasOne(Lc::class);
     }
+
+    public function event(){
+        return $this->belongsTo(Event::class);
+    }
 }
