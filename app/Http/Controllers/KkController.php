@@ -12,7 +12,7 @@ class KkController extends Controller
      */
     public function index()
     {
-        //
+        return view('KK.list-kk');
     }
 
     /**
@@ -20,7 +20,7 @@ class KkController extends Controller
      */
     public function create()
     {
-        //
+        return view('KK.add-kk');
     }
 
     /**

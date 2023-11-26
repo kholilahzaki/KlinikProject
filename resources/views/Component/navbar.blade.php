@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="/css/styles.css">
 
         <style>
-            a.nav-link {
+            body{ background-color: #F5F6FA; }
+            /* Tombol Menu */
+            a.menu {
                 color: #394E91;
                 font-size: 16px;
                 font-family: Inter;
@@ -18,8 +20,7 @@
                 line-height: 24px;
                 word-wrap: break-word
             }
-            /* lihat hover warnanya di figma: success */
-            a.nav-link:hover {
+            a.menu:hover {
                 color: #293A79;
                 font-size: 16px;
                 font-family: Inter;
@@ -27,7 +28,7 @@
                 line-height: 24px;
                 word-wrap: break-word;
             } 
-            a.nav-link:focus {
+            a.menu:focus {
                 color: #1E2A62;
                 font-size: 16px;
                 font-family: Inter;
@@ -40,37 +41,18 @@
 
     <body>
         <header>       
-            <div class="d-flex align-items-center justify-content-md-between py-3" style="padding-left:40px; padding-right:40px; background:#FFFFFF; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);">
-                <!-- <div>
-                    <a href="/" class="h5 nav-link" style="text-align:justify; color:#394E91;">Klinik Raycare</a>
+            <div style="width: 100%; height: 100%; padding-left: 40px; padding-right: 40px; padding-top: 8px; padding-bottom: 8px; background: white; box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25); justify-content: space-between; align-items: center; display: inline-flex">
+                <a href="/" class="nav nav-link">
+                    <div style="text-align: justify; color: #394E91; font-size: 18px; font-family: Inter; font-weight: 700; line-height: 25.20px; word-wrap: break-word">Klinik Raycare</div>
+                </a>
+                <div style="flex: 1 1 0; justify-content: center; align-items: center; display: flex">
+                    <a href="/" class="nav-link menu">Dashboard</a>
+                    <a href="/Event" class="nav-link menu">Acara</a>
                 </div>
-                <div class="d-flex justify-content-center align-items-center gap-3" style="flex: 1 0 0;">
-                    <div class="d-flex justify-content-center align-items center align-self-stretch">
-                        <a href="#" class="nav-link body-medium text-align-justify" style="color:#394E91;">Dashboard</a>
-                    </div>
-                    <div class="d-flex justify-content-center align-items center align-self-stretch">
-                        <a href="#" class="nav-link body-medium text-align-justify" style="color:#394E91;">Acara</a>
-                    </div>
-                    <div class="d-flex justify-content-center align-items center align-self-stretch">
-                        <a href="#" class="nav-link body-medium text-align-justify" style="color:#394E91;">TPS</a>
-                    </div>
-                </div>
-                <div>
-                    <img src="https://github.com/mdo.png" alt="" width="40" height="40" class="rounded-circle me-2">
-                </div> -->
-                <div class="col-md-3 mb-2 mb-md-0">
-                    <a href="/" class="h5 d-inline-flex link-body-emphasis text-decoration-none" style="color: #394E91;">
-                        Klinik Raycare
+                <div class="text-end">
+                    <a class="btn button-ghost" style="padding: 16px; border-radius: 10px; justify-content: center; align-items: center; display: flex" href="/login" role="button">
+                        <div style="text-align: justify; color: #394E91; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Logout</div>
                     </a>
-                </div>
-
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a class="body-medium nav-link px-2" href="/">Dashboard</a></li>
-                    <li><a class="body-medium nav-link px-2"  href="/Event">Acara</a></li>
-                </ul>
-
-                <div class="col-md-3 text-end">
-                    <a href="/logout"><button type="button" class="btn btn-primary">Logout</button></a>
                 </div>
             </div>
         </header>
