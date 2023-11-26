@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('kks', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('ktp_id')->unsigned();
+            $table->foreign('ktp_id')->references('id')->on('ktps')->onDelete('cascade')->onUpdate('cascade');
             $table->string('kk_nik')->unique();
             $table->enum('kk_status', ['KEPALA KELUARGA', 'ISTRI', 'ANAK']);
             $table->string('kk_nama');

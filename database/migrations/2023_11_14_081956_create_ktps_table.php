@@ -13,8 +13,6 @@ return new class extends Migration
     {
         Schema::create('ktps', function (Blueprint $table) {
             $table->id();
-            $table->string('kk_nik')->unique();
-            $table->string('kk_nama');
             $table->string('ktp_tempatlahir');
             $table->date('ktp_tglLahir');
             $table->enum('ktp_jeniskelamin', ['L', 'P']);

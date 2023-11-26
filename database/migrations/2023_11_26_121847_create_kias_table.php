@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('kias', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('kk_id')->unsigned();
+            $table->foreign('kk_id')->references('id')->on('kks')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('kia_tempatlahir');
+            $table->date('kia_tglLahir');
+            $table->enum('kia_jeniskelamin', ['L', 'P']);
+            $table->text('kia_alamat');
+            $table->enum('kia_agama', ['ISLAM', 'KRISTEN', 'KATOLIK', 'HINDU', 'BUDDHA', 'KONGHUCU']);
+            $table->string('no_akta_lahir');
+            $table->binary('kia_fotokia');
             $table->timestamps();
         });
     }
