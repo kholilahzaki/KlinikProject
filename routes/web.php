@@ -8,7 +8,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KkController;
 use App\Http\Controllers\MemberController;
 use App\Http\Middleware\RedirectIfAuthenticated;
-// use App\Http\Middleware\Authenticate;
+use Illuminate\Support\Facades\AuthController;
+use App\Http\Middleware\Authenticate;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +30,6 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::get('/register', [RegisterController::class, 'register']);
 Route::post('/register', [RegisterController::class, 'store']);
 
-// DASHBOARD
 Route::get('/', [DashboardController::class, 'index']);
 
 // KK

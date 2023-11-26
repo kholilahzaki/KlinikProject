@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Kk;
+use App\Models\Kk;
 use Illuminate\Http\Request;
 
 class KkController extends Controller

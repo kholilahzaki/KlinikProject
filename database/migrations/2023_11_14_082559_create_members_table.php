@@ -21,7 +21,9 @@ return new class extends Migration
             $table->foreign('bpjs_id')->references('id')->on('bpjs')->onDelete('cascade')->onUpdate('cascade');
             $table->bigInteger('lc_id')->unsigned();
             $table->foreign('lc_id')->references('id')->on('lcs')->onDelete('cascade')->onUpdate('cascade');
-            $table->integer('mem_notelp')->unique();
+            $table->bigInteger('e_id')->unsigned();
+            $table->foreign('e_id')->references('id')->on('events')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('mem_notelp')->unique();
             $table->enum('mem_disabilitas', ['YA', 'TIDAK']);
             $table->text('mem_lokasitps');
             $table->enum('mem_status', ['SAKSI', 'SIMPATISAN']);

@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('ktps', function (Blueprint $table) {
             $table->id();
-            $table->integer('ktp_nik')->unique();
-            $table->string('ktp_nama');
+            $table->string('kk_nik')->unique();
+            $table->string('kk_nama');
             $table->string('ktp_tempatlahir');
             $table->date('ktp_tglLahir');
             $table->enum('ktp_jeniskelamin', ['L', 'P']);
@@ -23,6 +23,7 @@ return new class extends Migration
             $table->enum('ktp_statuskawin', ['LAJANG', 'KAWIN', 'CERAI HIDUP', 'CERAI MATI']);
             $table->string('ktp_pekerjaan');
             $table->enum('ktp_kewarganegaraan', ['WNI', 'WNA']);
+            $table->string('ktp_negaraAsal');
             $table->binary('ktp_fotoktp');
             $table->timestamps();
         });

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Penarikan_lc;
+use App\Models\Penarikan_lc;
 use Illuminate\Http\Request;
 
 class PenarikanLcController extends Controller

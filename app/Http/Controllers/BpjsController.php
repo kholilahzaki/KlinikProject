@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Bpjs;
+use App\Models\Bpjs;
 use Illuminate\Http\Request;
 
 class BpjsController extends Controller

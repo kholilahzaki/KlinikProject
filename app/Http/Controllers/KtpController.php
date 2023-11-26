@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Ktp;
+use App\Models\Ktp;
 use Illuminate\Http\Request;
 
 class KtpController extends Controller
