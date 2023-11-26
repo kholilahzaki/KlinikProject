@@ -29,4 +29,8 @@ class Member extends Model
     public function event(){
         return $this->belongsTo(Event::class);
     }
+
+    public function absen(){
+        return $this->belongsTo(Absen::class);
+    }
 }

@@ -13,4 +13,8 @@ class Event extends Model
     public function member(){
         return $this->hasMany(Member::class);
     }
+
+    public function absen(){
+        return $this->belongsTo(Absen::class);
+    }
 }

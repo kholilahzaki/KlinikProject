@@ -26,4 +26,8 @@ class Kk extends Model
     public function lc(){
         return $this->hasMany(Lc::class);
     }
+
+    public function kia(){
+        return $this->belongsT(Kia::class);
+    }
 }
