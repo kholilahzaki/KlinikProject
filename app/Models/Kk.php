@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Kk extends Model
 {
     use HasFactory;
-    protected $fillable = ['kk_nik', 'kk_nama', 'kk_no', 'kk_no_dokumen', 'kk_kepalakeluarga', 'kk_pasangan', 'kk_anak', 'kk_fotokk'];
+    protected $fillable = ['kk_nik', 'kk_status', 'kk_nama', 'kk_no', 'kk_no_dokumen', 'kk_fotokk'];
     protected $primaryKey = 'kk_no';
     
     public $incrementing = false;
