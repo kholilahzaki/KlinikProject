@@ -54,15 +54,6 @@
                         <div style="text-align: justify; color: #394E91; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Logout</div>
                     </a>
                 </div>
-
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a class="body-medium nav-link px-2" href="/">Dashboard</a></li>
-                    <li><a class="body-medium nav-link px-2"  href="/Event">Acara</a></li>
-                </ul>
-
-                <div class="col-md-3 text-end">
-                    <a href="/login"><button type="button" class="btn btn-primary">Logout</button></a>
-                </div>
             </div>
         </header>
 
