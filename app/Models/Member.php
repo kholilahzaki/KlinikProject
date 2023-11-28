@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Member extends Model
 {
     use HasFactory;
-    protected $fillable = ['mem_disabilitas', 'mem_lokasitps', 'mem_status', 'mem_koordinator'];
+    protected $fillable = ['mem_notelp', 'mem_disabilitas', 'mem_lokasitps', 'mem_status', 'mem_koordinator'];
 
     public function bpjs(){
         return $this->hasOne(Bpjs::class);

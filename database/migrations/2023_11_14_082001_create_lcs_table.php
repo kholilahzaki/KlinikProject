@@ -21,7 +21,7 @@ return new class extends Migration
             $table->enum('lc_sumberdata', ['GAPLE', 'BAZAR', 'REKOMENDASI']);
             $table->binary('lc_formlc');
             $table->enum('lc_isActive', ['0', '1']);
-            $table->enum('lc_alasan', ['UPGRADE', 'BERHENTI SEMENTARA', 'TIDAK MENDUKUNG', 'MENINGGAL']);
+            $table->enum('lc_alasan', ['UPGRADE', 'BERHENTI SEMENTARA', 'TIDAK MENDUKUNG', 'MENINGGAL'])->nullable();
             $table->timestamps();
         });
     }

@@ -3,10 +3,11 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-use App\Models\Bpjs;
-use App\Models\Ktp;
 use App\Models\Kk;
+use Carbon\Carbon;
+use App\Models\Ktp;
+use App\Models\Bpjs;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,189 +18,107 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\Bpjs::factory(10)->create();
 
-        Ktp::create([
-            'no_kk' => , 
-            'kk_no_dokumen' => , 
-            'kk_kepalakeluarga' => , 
-            'kk_pasangan' => , 
-            'kk_anak' => ,
-            'kk_fotokk' => 
-        ]);
+        
+        // Kk::create([
+        //     'kk_nik' => '3217102306960012',
+        //     'kk_status' => '3',
+        //     'kk_nama' => 'Dina',
+        //     'kk_no' => '3217102201200200', 
+        //     'kk_no_dokumen' => 'K 32171022345', 
+        //     'kk_fotokk' => 'foto kk surya&dina',
+        // ]);
 
+        // Kk::create([
+        //     'kk_nik' => '3217102306960012',
+        //     'kk_status' => '3',
+        //     'kk_nama' => 'Dina',
+        //     'kk_no' => '3217102201200200', 
+        //     'kk_no_dokumen' => 'K 32171022345', 
+        //     'kk_fotokk' => 'foto kk surya&dina',
+        // ]);
+    
+        // Kk::create([
+        //         'kk_nik' => '3311022801000001',
+        //         'kk_status' => '3',
+        //         'kk_nama' => 'Rayhan',
+        //             'kk_no' => '3311021511950030', 
+        //             'kk_no_dokumen' => 'K 33110274112', 
+        //             'kk_fotokk' => 'foto kk budi&agnes',
+        //         ]);
+        
+        // Kk::create([
+        //         'kk_nik' => '3217081707960003',
+        //         'kk_status' => '1',
+        //         'kk_nama' => 'Wisnu',
+        //             'kk_no' => '3217081310240024', 
+        //             'kk_no_dokumen' => 'K 32170865551', 
+        //             'kk_fotokk' => 'foto kk wisnu&dinda',
+        //         ]);
+        
+        // Kk::create([
+        //         'kk_nik' => '3215031204940006',
+        //         'kk_status' => '3',
+        //         'kk_nama' => 'Nadia',
+        //             'kk_no' => '3215032511920114', 
+        //             'kk_no_dokumen' => 'K 32150313748', 
+        //             'kk_fotokk' => 'foto kk djarot&dewi',
+        //         ]);
+        
+        // Kk::create([
+        //         'kk_nik' => '3210120806870003',
+        //         'kk_status' => '2',
+        //         'kk_nama' => 'Diana',
+        //             'kk_no' => '3210121402140120', 
+        //             'kk_no_dokumen' => 'K 32101211244', 
+        //             'kk_fotokk' => 'foto kk hendra&diana',
+        //         ]);
+
+                
         Ktp::create([
-            'no_nik' => '52531123', 
-            'ktp_nama' => 'wahidin', 
-            'ktp_tglLahir' => '2001-02-13', 
+            'ktp_tempatlahir' => 'Bandung', 
+            'ktp_tglLahir' => Carbon::create('1993', '01', '16'), 
             'ktp_jeniskelamin' => '1', 
-            'ktp_alamat' => 'jalan melayu', 
+            'ktp_alamat' => 'Jl. Cendana No.23, Jakarta', 
             'ktp_agama' => '1', 
-            'ktp_statuskawin' => 'lajang', 
-            'ktp_pekerjaan' => 'pelajar', 
+            'ktp_statuskawin' => '2', 
+            'ktp_pekerjaan' => 'PNS', 
             'ktp_kewarganegaraan' => '1', 
-            'ktp_fotoktp' => 'BBBBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBAAAAABBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBABBBABBBBBBBBBBAAAAABB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBAAAAAAA
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBABBABBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBAAAAAAAABBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBAABBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBB',
-        ]);
+            'ktp_negaraAsal' => 'Indonesia',
+            'ktp_fotoktp' => 'foto-ktp-surya',
+            ]);
 
         Ktp::create([
-            'no_nik' => '11337745', 
-            'ktp_nama' => 'riana', 
-            'ktp_tglLahir' => '1992-05-23', 
+            'ktp_tempatlahir' => 'Jakarta', 
+            'ktp_tglLahir' => Carbon::create('1996', '06', '23'), 
             'ktp_jeniskelamin' => '2', 
-            'ktp_alamat' => 'jalan merak', 
+            'ktp_alamat' => 'Jl. Cendana No.23, Jakarta', 
             'ktp_agama' => '1', 
-            'ktp_statuskawin' => 'kawin', 
-            'ktp_pekerjaan' => 'pns', 
-            'ktp_kewarganegaraan' => '1', 
-            'ktp_fotoktp' => 'BBBBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBAAAAABBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBABBBABBBBBBBBBBAAAAABB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBAAAAAAA
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBABBABBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBAAAAAAAABBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBAABBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBB',
+            'ktp_statuskawin' => '2', 
+            'ktp_pekerjaan' => 'PNS', 
+            'ktp_kewarganegaraan' => '1',
+            'ktp_negaraAsal' => 'Indonesia', 
+            'ktp_fotoktp' => 'foto-ktp-dina',
+            ]);
+
+        Kk::create([
+            'ktp_id' => '1',
+            'kk_nik' => '3217101601930002',
+            'kk_status' => '1',
+            'kk_nama' => 'Surya',
+            'kk_no' => '3217102201200200', 
+            'kk_no_dokumen' => 'K 32171022345', 
+            'kk_fotokk' => 'foto kk surya&dina',
         ]);
 
-        Ktp::create([
-            'no_nik' => '55343387', 
-            'ktp_nama' => 'riri', 
-            'ktp_tglLahir' => '2000-07-12', 
-            'ktp_jeniskelamin' => '2', 
-            'ktp_alamat' => 'jalan melati', 
-            'ktp_agama' => '2', 
-            'ktp_statuskawin' => 'lajang', 
-            'ktp_pekerjaan' => 'pelajar', 
-            'ktp_kewarganegaraan' => '1', 
-            'ktp_fotoktp' => 'BBBBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBAAAAABBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBABBBABBBBBBBBBBAAAAABB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBAAAAAAA
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBABBABBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBAAAAAAAABBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBAABBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBB',
+        Kk::create([
+            'ktp_id' => '2',
+            'kk_nik' => '3217102306960012',
+            'kk_status' => '2',
+            'kk_nama' => 'Dina',
+            'kk_no' => '3217102201200200', 
+            'kk_no_dokumen' => 'K 32171022345', 
+            'kk_fotokk' => 'foto kk surya&dina',
         ]);
 
-        Ktp::create([
-            'no_nik' => '53435645', 
-            'ktp_nama' => 'gery', 
-            'ktp_tglLahir' => '1996-08-12', 
-            'ktp_jeniskelamin' => '1', 
-            'ktp_alamat' => 'jalan paduka', 
-            'ktp_agama' => '3', 
-            'ktp_statuskawin' => 'lajang', 
-            'ktp_pekerjaan' => 'wiraswasta', 
-            'ktp_kewarganegaraan' => '1', 
-            'ktp_fotoktp' => 'BBBBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBAAAAABBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBABBBABBBBBBBBBBAAAAABB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBAAAAAAAA
-            BBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBAAAAAAA
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBABBABBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBAAAAAAAABBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBAAAABBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBAABBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-            BBBBBBBBBBBBBBBBBBBBBBABBBBBBBBBBBBBBBBB',
-        ]);
     }
 }

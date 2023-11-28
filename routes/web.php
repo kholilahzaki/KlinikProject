@@ -1,15 +1,16 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use App\Http\Middleware\Authenticate;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KkController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MemberController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\KkController;
-use App\Http\Controllers\MemberController;
-use App\Http\Middleware\RedirectIfAuthenticated;
 use Illuminate\Support\Facades\AuthController;
-use App\Http\Middleware\Authenticate;
+use App\Http\Middleware\RedirectIfAuthenticated;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,13 +25,24 @@ use App\Http\Middleware\Authenticate;
 
 // Auth::routes();
 
-Route::get('/login', [LoginController::class, 'login']);
-Route::post('/login', [LoginController::class, 'authenticate']);
+// Route::get('/login', [LoginController::class, 'login'])->middleware('guest');
+// Route::post('/login', [LoginController::class, 'authenticate']);
  
-Route::get('/register', [RegisterController::class, 'register']);
-Route::post('/register', [RegisterController::class, 'store']);
+// Route::get('/register', [RegisterController::class, 'register']);
+// Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/', [DashboardController::class, 'index']);
+// Route::get('/', [DashboardController::class, 'index']);
+
+Route::middleware('guest')->group( function () {
+    Route::get('/login', [LoginController::class, 'login'])->name('login');
+    Route::post('/login', [LoginController::class, 'authenticate'])->name('authenticate');
+    Route::get('/register', [RegisterController::class, 'register']);
+    Route::post('/register', [RegisterController::class, 'store']);
+});
+Route::middleware(['auth'])->group(function(){
+    Route::get('/', [DashboardController::class, 'index']);
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+});
 
 // KK
 Route::get('/daftar-kartu-keluarga', [KkController::class, 'index']);

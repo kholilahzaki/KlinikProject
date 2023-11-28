@@ -50,7 +50,7 @@
                     <a href="/Event" class="nav-link menu">Acara</a>
                 </div>
                 <div class="text-end">
-                    <a class="btn button-ghost" style="padding: 16px; border-radius: 10px; justify-content: center; align-items: center; display: flex" href="/login" role="button">
+                    <a class="btn button-ghost" style="padding: 16px; border-radius: 10px; justify-content: center; align-items: center; display: flex" action="/logout" role="button">
                         <div style="text-align: justify; color: #394E91; font-size: 16px; font-family: Inter; font-weight: 600; line-height: 24px; word-wrap: break-word">Logout</div>
                     </a>
                 </div>
